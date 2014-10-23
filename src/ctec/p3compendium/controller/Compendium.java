@@ -1,51 +1,138 @@
 package ctec.p3compendium.controller;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
-import android.widget.Toast;
+import android.view.View;
+import android.widget.*;
 
 public class Compendium extends Activity
 {
+	private String[] P3Fool;
 	private ListView listView;
-
+	private String[] values;
+	private int level;
+	private int St;
+	private int Ma;
+	private int En;
+	private int Ag;
+	private int Lu;
+	
+	
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_compendium);
 		
+		
+		
 		listView = (ListView) findViewById(R.id.list);
-		String[] values = new String[] { "Android List View", 
-                "Adapter implementation",
-                "Simple List View In Android",
-                "Create List View Android", 
-                "Android Example", 
-                "List View Source Code", 
-                "List View Array Adapter", 
-                "Android Example List View" 
-               };
+		setupListeners();
+		
+		P3Fool = new String[]
+				
+		{
+			"Orpheus",
+			"Legion",
+			"Ose",
+			"Black Frost",
+			"Decarabia",
+			"Loki",
+			"Susano-o"
+		};
+	
+			P3Fool [0] = ("1,2,2,2,2,2");	
+			P3Fool [1] =("12,11,9,11,4,8");
+			P3Fool [2] =("22,20,13,15,14,11");
+			P3Fool [3] =("34,23,25,25,26,26");
+			P3Fool [4] =("44,25,35,25,26,28");
+			P3Fool [5] =("55,40,42,29,41,20");
+			P3Fool [6] =("76,57,51,53,49,53");		
+					
+		values = new String[] 
+				
+		{ 
+                "Fool",
+                "Magician",
+                "Priestess", 
+                "Empress", 
+                "Emperor", 
+                "Heirophant", 
+                "Lovers",
+                "Chariot",
+                "Justice",
+                "Hermit",
+                "Fortune",
+                "Strength",
+                "Hanged",
+                "Death",
+                "Temperance",
+                "Devil",
+                "Tower",
+                "Star",
+                "Moon",
+                "Sun",
+                "Judgment"
+         };
+		
+		
+		
 		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, android.R.id.text1, values);
 		 listView.setAdapter(adapter);
-		 listView.setOnItemClickListener(new OnItemClickListener()
+		 
+		 
+		 }
+	
+	private void setupListeners()
 		 {
-			 @Override
-			 public void onItemClick(AdapterView<?>parent, View view,
-				int position, long id)
+			listView.setOnItemClickListener(new AdapterView.OnItemClickListener()
+			{
+
+				@Override
+				public void onItemClick(AdapterView<?> parent, View view,
+						int position, long id)
 				{
-				 int itemPosition = position;
-				 String itemValue = (String) listView.getItemAtPosition(position);
-				 
-				 Toast.makeText(getApplicationContext(),
-	                      "Position :"+itemPosition+"  ListItem : " +itemValue , Toast.LENGTH_LONG)
-	                      .show();
-				 
-				}			 
-		 });		 
+					Toast.makeText(getBaseContext(), values[position], Toast.LENGTH_LONG).show();
+					
+				}
+			});
+		 }
+	
+	public int getLevel()
+	{
+		return level();
 	}
+	
+	public int getSt()
+	{
+		return St();
+	}
+	
+	public int getMa()
+	{
+		return Ma();
+	}
+	
+	public int getEn()
+	{
+		return En();
+	}
+	
+	public int getAg()
+	{
+		return Ag();
+	}
+	
+	public int getLu()
+	{
+		return Lu();
+	}
+	
+	
 }
+	
+
