@@ -10,7 +10,7 @@ import android.widget.*;
 
 public class Compendium extends Activity
 {
-	private String[] P3Fool;
+	
 	private ListView listView;
 	private String[] values;
 	private int level;
@@ -33,25 +33,8 @@ public class Compendium extends Activity
 		listView = (ListView) findViewById(R.id.list);
 		setupListeners();
 		
-		P3Fool = new String[]
-				
-		{
-			"Orpheus",
-			"Legion",
-			"Ose",
-			"Black Frost",
-			"Decarabia",
-			"Loki",
-			"Susano-o"
-		};
-	
-			P3Fool [0] = ("1,2,2,2,2,2");	
-			P3Fool [1] =("12,11,9,11,4,8");
-			P3Fool [2] =("22,20,13,15,14,11");
-			P3Fool [3] =("34,23,25,25,26,26");
-			P3Fool [4] =("44,25,35,25,26,28");
-			P3Fool [5] =("55,40,42,29,41,20");
-			P3Fool [6] =("76,57,51,53,49,53");		
+		
+		
 					
 		values = new String[] 
 				
@@ -102,35 +85,35 @@ public class Compendium extends Activity
 			});
 		 }
 	
-	public int getLevel()
-	{
-		return level();
-	}
-	
-	public int getSt()
-	{
-		return St();
-	}
-	
-	public int getMa()
-	{
-		return Ma();
-	}
-	
-	public int getEn()
-	{
-		return En();
-	}
-	
-	public int getAg()
-	{
-		return Ag();
-	}
-	
-	public int getLu()
-	{
-		return Lu();
-	}
+//	public int getLevel()
+//	{
+//		return level();
+//	}
+//	
+//	public int getSt()
+//	{
+//		return St();
+//	}
+//	
+//	public int getMa()
+//	{
+//		return Ma();
+//	}
+//	
+//	public int getEn()
+//	{
+//		return En();
+//	}
+//	
+//	public int getAg()
+//	{
+//		return Ag();
+//	}
+//	
+//	public int getLu()
+//	{
+//		return Lu();
+//	}
 	
 	
 }

@@ -23,8 +23,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Fool"
+            android:name=".Arcanas"
             android:label="@string/title_activity_magician" >
+        </activity>
+        <activity
+            android:name=".CharScreen"
+            android:label="@string/title_activity_char_screen" >
         </activity>
     </application>
 
