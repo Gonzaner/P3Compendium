@@ -1291,6 +1291,14 @@ containing a value of this type.
         public static final int always=0x7f05001d;
         public static final int beginning=0x7f050023;
         public static final int bottom=0x7f050005;
+        public static final int button1=0x7f05004e;
+        public static final int button2=0x7f05004d;
+        public static final int button3=0x7f05004f;
+        public static final int button4=0x7f050050;
+        public static final int button5=0x7f050051;
+        public static final int button6=0x7f050052;
+        public static final int button7=0x7f050053;
+        public static final int button8=0x7f050054;
         public static final int center=0x7f05000c;
         public static final int center_horizontal=0x7f05000a;
         public static final int center_vertical=0x7f050008;
@@ -1316,7 +1324,7 @@ containing a value of this type.
         public static final int ifRoom=0x7f05001c;
         public static final int image=0x7f050038;
         public static final int left=0x7f050006;
-        public static final int list=0x7f05004d;
+        public static final int list=0x7f050055;
         public static final int listMode=0x7f050013;
         public static final int list_item=0x7f05003a;
         public static final int middle=0x7f050024;
