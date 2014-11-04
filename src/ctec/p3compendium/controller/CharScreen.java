@@ -513,5 +513,6 @@ public class CharScreen extends Activity
 				};
 		//* where we initialize all the text views, pics.
 		
+		
 	}
 }

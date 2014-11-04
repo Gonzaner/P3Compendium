@@ -15,62 +15,150 @@
         android:minWidth="300" >
 
         <TableRow
-            android:id="@+id/tableRow1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:minHeight="75"
-            android:minWidth="75" >
-
-            <TextView
-                android:id="@+id/personaName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Persona" />
-
-            <TextView
-                android:id="@+id/personaLevel"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Level" />
-
-            <TextView
-                android:id="@+id/personaSt"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="St" />
-
-            <TextView
-                android:id="@+id/personaMa"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Ma" />
-
-            <TextView
-                android:id="@+id/personaEn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="En" />
-
-            <TextView
-                android:id="@+id/personaAg"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Ag" />
-
-            <TextView
-                android:id="@+id/personaLu"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Lu" />
-
-        </TableRow>
-
-        <TableRow
             android:id="@+id/tableRow2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:minHeight="75"
             android:minWidth="75" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    android:id="@+id/personaName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Persona" />
+
+                <TextView
+                    android:id="@+id/personaNameShow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    android:id="@+id/personaLevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Level" />
+
+                <TextView
+                    android:id="@+id/personaLevelShow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    android:id="@+id/personaSt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="St" />
+
+                <TextView
+                    android:id="@+id/personaStShow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    android:id="@+id/personaMa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ma" />
+
+                <TextView
+                    android:id="@+id/personaMaShow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    android:id="@+id/personaEn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="En" />
+
+                <TextView
+                    android:id="@+id/personaEnShow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    android:id="@+id/personaAg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ag" />
+
+                <TextView
+                    android:id="@+id/personaAgShow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    android:id="@+id/personaLu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lu" />
+
+                <TextView
+                    android:id="@+id/personaLuShow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#" />
+
+            </LinearLayout>
 
         </TableRow>
 
