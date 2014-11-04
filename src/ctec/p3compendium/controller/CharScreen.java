@@ -2,8 +2,8 @@ package ctec.p3compendium.controller;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.view.*;
+import android.widget.*;
 
 public class CharScreen extends Activity
 {
@@ -12,6 +12,16 @@ public class CharScreen extends Activity
 	private String[] charName;
 	private String charType;
 	
+	public int[][] getStats()
+	{
+		return stats;
+	}
+
+	public void setStats(int[][] stats)
+	{
+		this.stats = stats;
+	}
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{
@@ -22,6 +32,9 @@ public class CharScreen extends Activity
 		charName = new String[]
 				
 				{
+					/**
+					 * Fool
+					 */
 					"Orpheus",
 					"Slime",
 					"Legion",
@@ -31,6 +44,9 @@ public class CharScreen extends Activity
 					"Loki",
 					"Susano-o",
 					"Orpheus Telos",
+					/**
+					 * Magician
+					 */
 					"Nekomata",
 					"Jack Frost",
 					"Pyro Jack",
@@ -39,6 +55,9 @@ public class CharScreen extends Activity
 					"Orobas",
 					"Rangda",
 					"Surt",
+					/**
+					 * Priestess
+					 */
 					"Apsaras",
 					"Unicorn",
 					"High Pixie",
@@ -47,6 +66,9 @@ public class CharScreen extends Activity
 					"Parvati",
 					"Kikuri-hime",
 					"Scathach",
+					/**
+					 * Empress
+					 */
 					"Leanan Sidhe",
 					"Yaksini",
 					"Laksmi",
@@ -55,6 +77,9 @@ public class CharScreen extends Activity
 					"Mother Harlot",
 					"Skadi",
 					"Alilat",
+					/**
+					 * Emperor
+					 */
 					"Forneus",
 					"Oberon",
 					"Take-Mikazuchi",
@@ -63,6 +88,9 @@ public class CharScreen extends Activity
 					"Kingu",
 					"Barong",
 					"Odin",
+					/**
+					 * Heirophant
+					 */
 					"Omoikane",
 					"Berith",
 					"Shiisaa",
@@ -71,6 +99,9 @@ public class CharScreen extends Activity
 					"Hokuto Seikun",
 					"Daisoujou",
 					"Kohryu",
+					/**
+					 * Lovers
+					 */
 					"Pixie",
 					"Alp",
 					"Narcissus",
@@ -79,6 +110,9 @@ public class CharScreen extends Activity
 					"Titania",
 					"Raphael",
 					"Cybele",
+					/**
+					 * Chariot
+					 */
 					"Ara Mitama",
 					"Chimera",
 					"Zouchouten",
@@ -87,6 +121,9 @@ public class CharScreen extends Activity
 					"Nata Taishi",
 					"Koumokuten",
 					"Thor",
+					/**
+					 * Justice
+					 */
 					"Amgel",
 					"Archangel",
 					"Principlaity",
@@ -95,6 +132,9 @@ public class CharScreen extends Activity
 					"Dominion",
 					"Throne",
 					"Melchizedek",
+					/**
+					 * Hermit
+					 */
 					"Yomotsu-Shikome",
 					"Naga",
 					"Lamia",
@@ -104,6 +144,9 @@ public class CharScreen extends Activity
 					"Nebrios",
 					"Kumbhanda",
 					"Arahabaki",
+					/**
+					 * Fortune
+					 */
 					"Fortuna",
 					"Empus",
 					"Kusi Mitama",
@@ -111,6 +154,9 @@ public class CharScreen extends Activity
 					"Lachesis",
 					"Atropos",
 					"Norn",
+					/**
+					 * Strength
+					 */
 					"Cerberus",
 					"Valkyrie",
 					"Rakshasa",
@@ -120,6 +166,9 @@ public class CharScreen extends Activity
 					"Narashima",
 					"Kali",
 					"Siegfried",
+					/**
+					 * Hanged Man
+					 */
 					"Inugami",
 					"Taka-Minakata",
 					"Orthrus",
@@ -128,6 +177,9 @@ public class CharScreen extends Activity
 					"Hecatoncheires",
 					"Hell Biker",
 					"Attis",
+					/**
+					 * Death
+					 */
 					"Ghoul",
 					"Pale Rider",
 					"Loa",
@@ -135,6 +187,9 @@ public class CharScreen extends Activity
 					"Mot",
 					"Alice",
 					"Thanatos",
+					/**
+					 * Temperance
+					 */
 					"Nigi Mitama",
 					"Mithra",
 					"Genbu",
@@ -143,6 +198,9 @@ public class CharScreen extends Activity
 					"Suzaku",
 					"Byakko",
 					"Yurlungur",
+					/**
+					 * Devil
+					 */
 					"Lilim",
 					"Vetala",
 					"Incubus",
@@ -151,6 +209,9 @@ public class CharScreen extends Activity
 					"Lilith",
 					"Abaddon",
 					"Beelzebub",
+					/**
+					 * Tower
+					 */
 					"Eligor",
 					"Chu Chulainn",
 					"Bishamonten",
@@ -159,6 +220,9 @@ public class CharScreen extends Activity
 					"Mara",
 					"Shiva",
 					"Chi You",
+					/**
+					 * Star
+					 */
 					"Nandi",
 					"Kaiwan",
 					"Ganesha",
@@ -166,6 +230,9 @@ public class CharScreen extends Activity
 					"Kartikeya",
 					"Saturnus",
 					"Helel",
+					/**
+					 * Moon
+					 */
 					"Gurr",
 					"Yamata-no-Orochi",
 					"Girimehkala",
@@ -174,6 +241,9 @@ public class CharScreen extends Activity
 					"Seth",
 					"Baal Zebul",
 					"Sandalphon",
+					/**
+					 * Sun
+					 */
 					"Yatagarasu",
 					"Quetzalcoatl",
 					"Jatayu",
@@ -181,12 +251,18 @@ public class CharScreen extends Activity
 					"Sparna",
 					"Vishnu",
 					"Asura",
+					/**
+					 * Judgment
+					 */
 					"Anubis",
 					"Trumpeter",
 					"Michael",
 					"Satan",
 					"Lucifer",
 					"Messiah",
+					/**
+					 * Aeon
+					 */
 					"Uriel",
 					"Nidhogg",
 					"Ananta",
@@ -198,6 +274,10 @@ public class CharScreen extends Activity
 		 */
 		stats = new int [][]
 				{ 
+				
+					/**
+					 * Fool
+					 */
 					{1,2,2,2,2,2},
 					{12,9,9,7,8,10},
 					{22,17,15,18,8,15},
@@ -207,6 +287,9 @@ public class CharScreen extends Activity
 					{58,41,47,30,42,21},
 					{76,57,51,53,49,53},
 					{90,75,72,72,72,72},
+					/**
+					 * Magician
+					 */
 					{5,4,6,5,3,4},
 					{8,5,8,8,4,6},
 					{14,7,14,9,8,11},
@@ -215,6 +298,9 @@ public class CharScreen extends Activity
 					{34,20,29,21,22,27},
 					{40,25,35,24,22,21},
 					{52,40,49,35,26,32},
+					/**
+					 * Priestess
+					 */
 					{3,3,4,3,2,4},
 					{11,7,10,8,9,6},
 					{21,13,18,12,11,16},
@@ -223,6 +309,9 @@ public class CharScreen extends Activity
 					{47,24,38,25,32,33},
 					{53,29,45,28,30,34},
 					{64,51,53,29,49,40},
+					/**
+					 * Empress
+					 */
 					{33,19,34,20,24,22},
 					{50,33,32,26,33,33},
 					{57,31,45,32,33,37},
@@ -231,6 +320,9 @@ public class CharScreen extends Activity
 					{74,48,55,50,43,51},
 					{80,48,57,47,45,50},
 					{84,64,61,52,60,53},
+					/**
+					 * Emperor
+					 */
 					{7,5,5,8,6,4},
 					{15,12,15,9,8,8},
 					{24,19,18,13,15,14},
@@ -239,6 +331,9 @@ public class CharScreen extends Activity
 					{46,31,37,30,28,29},
 					{52,40,36,30,28,29},
 					{57,39,52,33,36,39},
+					/**
+					 * Heirophant
+					 */
 					{7,4,7,6,4,7},
 					{13,11,10,9,7,9},
 					{26,18,18,17,17,15},
@@ -247,6 +342,9 @@ public class CharScreen extends Activity
 					{47,28,35,35,25,29},
 					{53,32,44,36,29,38},
 					{61,46,48,53,27,38},
+					/**
+					 * Lovers
+					 */
 					{2,2,3,2,3,3},
 					{6,3,7,5,5,5},
 					{20,12,18,9,13,20},
@@ -255,6 +353,9 @@ public class CharScreen extends Activity
 					{48,19,39,23,31,39},
 					{61,44,42,31,31,42},
 					{68,49,55,40,42,50},
+					/**
+					 * Chariot
+					 */
 					{6,6,4,6,4,5},
 					{9,8,4,9,8,5},
 					{14,16,4,13,7,9},
@@ -263,6 +364,9 @@ public class CharScreen extends Activity
 					{37,29,19,24,29,26},
 					{43,35,24,31,21,25},
 					{53,42,45,34,30,34},
+					/**
+					 * Justice
+					 */
 					{4,4,5,3,4,3},
 					{10,8,8,8,7,6},
 					{16,12,13,7,11,12},
@@ -271,6 +375,9 @@ public class CharScreen extends Activity
 					{42,28,33,24,25,23},
 					{51,35,32,26,34,33},
 					{59,50,46,43,36,31},
+					/**
+					 * Hermit
+					 */
 					{9,3,8,9,10,4},
 					{17,16,10,12,14,8},
 					{25,15,20,12,18,17},
@@ -280,6 +387,9 @@ public class CharScreen extends Activity
 					{50,31,42,32,34,30},
 					{56,38,37,35,45,20},
 					{60,42,50,51,32,34},
+					/**
+					 * Fortune
+					 */
 					{17,9,14,10,15,10},
 					{23,10,20,10,16,20},
 					{29,16,23,20,11,24},
@@ -287,6 +397,9 @@ public class CharScreen extends Activity
 					{45,26,36,19,31,30},
 					{54,26,45,27,31,40},
 					{62,40,54,32,46,44},
+					/**
+					 * Strength
+					 */
 					{11,10,7,8,8,7},
 					{16,16,8,16,10,8},
 					{23,23,10,18,11,14},
@@ -295,6 +408,9 @@ public class CharScreen extends Activity
 					{46,36,27,28,28,26},
 					{55,42,30,33,36,31},
 					{59,50,43,40,41,35},
+					/**
+					 * Hanged man
+					 */
 					{10,6,11,10,6,4},
 					{21,16,16,19,10,9},
 					{28,22,14,20,21,14},
@@ -303,6 +419,9 @@ public class CharScreen extends Activity
 					{54,37,32,45,20,35},
 					{60,49,35,49,40,14},
 					{67,51,59,61,54,40},
+					/**
+					 * Death
+					 */
 					{18,13,15,15,11,11},
 					{24,20,19,15,19,12},
 					{31,21,26,24,19,18},
@@ -310,6 +429,9 @@ public class CharScreen extends Activity
 					{45,31,37,34,22,29},
 					{56,31,50,27,42,39},
 					{64,48,51,44,44,39},
+					/**
+					 * Temperance
+					 */
 					{12,9,8,10,9,10},
 					{22,17,20,17,11,13},
 					{29,19,22,26,12,22},
@@ -318,6 +440,9 @@ public class CharScreen extends Activity
 					{51,32,39,32,40,29},
 				    {57,49,36,34,48,32},
 				    {64,43,47,49,34,41},
+				    /**
+					 * Devil
+					 */
 					{8,4,10,6,6,7},
 					{24,21,17,21,13,19},
 					{34,21,30,20,21,25},
@@ -326,6 +451,9 @@ public class CharScreen extends Activity
 					{61,39,52,38,40,36},
 					{68,49,52,49,33,44},
 					{71,50,55,47,44,41},
+					/**
+					 * Tower
+					 */
 					{31,28,19,23,22,18},
 					{40,33,28,30,23,25},
 					{60,47,44,41,35,39},
@@ -334,6 +462,9 @@ public class CharScreen extends Activity
 					{77,60,50,52,48,51},
 					{82,60,55,48,59,56},
 					{86,65,56,62,54,59},
+					/**
+					 * Star
+					 */
 					{39,29,26,29,17,32},
 					{49,35,41,33,26,33},
 					{58,48,35,39,32,40},
@@ -341,6 +472,9 @@ public class CharScreen extends Activity
 					{70,52,44,42,53,43},
 					{78,52,58,45,52,53},
 					{88,64,63,61,57,58},
+					/**
+					 * Moon
+					 */
 					{15,13,9,12,13,9},
 					{26,21,17,21,13,19},
 					{42,32,30,24,28,29},
@@ -349,6 +483,9 @@ public class CharScreen extends Activity
 					{66,48,53,46,34,40},
 					{71,50,55,47,44,41},
 					{74,54,54,50,47,51},
+					/**
+					 * Sun
+					 */
 					{30,22,23,18,24,19},
 					{43,28,29,30,32,30},
 					{55,35,40,31,44,39},
@@ -356,12 +493,18 @@ public class CharScreen extends Activity
 					{70,49,57,48,64,53},
 					{78,53,58,47,56,51},
 					{85,62,60,58,56,57},
+					/**
+					 * Judgment
+					 */
 					{59,41,50,38,37,36},
 					{65,43,47,43,46,43},
 					{72,51,47,46,50,51},
 					{79,51,60,52,47,58},
 					{89,65,68,64,52,52},
 					{90,63,62,60,62,63},
+					/**
+					 * Aeon
+					 */
 					{63,44,51,41,41,38},
 					{69,55,45,55,32,48},
 					{75,52,56,60,39,48},
