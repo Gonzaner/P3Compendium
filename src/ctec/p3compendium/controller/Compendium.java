@@ -13,12 +13,6 @@ public class Compendium extends Activity
 	
 	private ListView listView;
 	private String[] values;
-	private int level;
-	private int St;
-	private int Ma;
-	private int En;
-	private int Ag;
-	private int Lu;
 	
 	
 	
@@ -33,7 +27,10 @@ public class Compendium extends Activity
 		listView = (ListView) findViewById(R.id.list);
 		setupListeners();
 		
-		
+//		setkey("Trump")
+//		{
+//			setup("Trump","Fool")
+//		}
 		
 					
 		values = new String[] 
@@ -70,6 +67,10 @@ public class Compendium extends Activity
 		 
 		 }
 	
+
+
+
+
 	private void setupListeners()
 		 {
 			listView.setOnItemClickListener(new AdapterView.OnItemClickListener()
@@ -84,38 +85,6 @@ public class Compendium extends Activity
 				}
 			});
 		 }
-	
-//	public int getLevel()
-//	{
-//		return level();
-//	}
-//	
-//	public int getSt()
-//	{
-//		return St();
-//	}
-//	
-//	public int getMa()
-//	{
-//		return Ma();
-//	}
-//	
-//	public int getEn()
-//	{
-//		return En();
-//	}
-//	
-//	public int getAg()
-//	{
-//		return Ag();
-//	}
-//	
-//	public int getLu()
-//	{
-//		return Lu();
-//	}
-	
-	
 }
 	
 

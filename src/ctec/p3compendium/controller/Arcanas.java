@@ -14,4 +14,6 @@ public class Arcanas extends Activity
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_arcana);
 	}
+	
+
 }

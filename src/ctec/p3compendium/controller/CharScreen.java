@@ -1,5 +1,7 @@
 package ctec.p3compendium.controller;
 
+import java.util.Set;
+
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.*;
@@ -11,6 +13,48 @@ public class CharScreen extends Activity
 	private int [][] stats;
 	private String[] charName;
 	private String charType;
+    private TextView personaName;
+    private TextView personaLevel;
+    private TextView personaSt;
+    private TextView personaMa;
+    private TextView personaEn;
+    private TextView personaAg;
+    private TextView personaLu;
+    private TextView personaInherit;
+    private TextView personaResists;
+    private TextView personaBlock;
+    private TextView personaAbsorbs;
+    private TextView personaReflects;
+    private TextView personaWeak;
+    private TextView personaSkill1;
+    private TextView personaSkill2;
+    private TextView personaSkill3;
+    private TextView personaSkill4;
+    private TextView personaSkill5;
+    private TextView personaSkill6;
+    private TextView personaSkill7;
+    private TextView personaCost1;
+    private TextView personaCost2;
+    private TextView personaCost3;
+    private TextView personaCost4;
+    private TextView personaCost5;
+    private TextView personaCost6;
+    private TextView personaCost7;
+    private TextView personaEffect1;
+    private TextView personaEffect2;
+    private TextView personaEffect3;
+    private TextView personaEffect4;
+    private TextView personaEffect5;
+    private TextView personaEffect6;
+    private TextView personaEffect7;
+    private TextView personaSkillLevel1;
+    private TextView personaSkillLevel2;
+    private TextView personaSkillLevel3;
+    private TextView personaSkillLevel4;
+    private TextView personaSkillLevel5;
+    private TextView personaSkillLevel6;
+    private TextView personaSkillLevel7;
+    
 	
 	public int[][] getStats()
 	{
@@ -21,7 +65,184 @@ public class CharScreen extends Activity
 	{
 		this.stats = stats;
 	}
+	public TextView getpersonaName()
+	{
+		return personaName;
+	}
+	public TextView getpersonaLevel()
+	{
+		return personaLevel;
+	}
+	public TextView getpersonaSt()
+	{
+		return personaSt;
+	}
+	public TextView getpersonaMa()
+	{
+		return personaMa;
+	}
+	public TextView getpersonaEn()
+	{
+		return personaEn;
+	}
+	public TextView getpersonaAg()
+	{
+		return personaAg;
+	}
+	public TextView getpersonaLu()
+	{
+		return personaLu;
+	}
+	public TextView getpersonaInherit()
+	{
+		return personaInherit;
+	}
+	public TextView getpersonaResists()
+	{
+		return personaResists;
+	}
+	public TextView getpersonaBlock()
+	{
+		return personaBlock;
+	}
+	public TextView getpersonaAbsorbs()
+	{
+		return personaAbsorbs;
+	}
+	public TextView getpersonaReflects()
+	{
+		return personaReflects;
+	}
+	public TextView getpersonaWeak()
+	{
+		return personaWeak;
+	}
+	public TextView getpersonaSkill1()
+	{
+		return personaSkill1;
+	}
+	public TextView getpersonaSkill2()
+	{
+		return personaSkill2;
+	}
+	public TextView getpersonaSkill3()
+	{
+		return personaSkill3;
+	}
+	public TextView getpersonaSkill4()
+	{
+		return personaSkill4;
+	}
+	
+	public TextView getpersonaSkill5()
+	{
+		return personaSkill5;
+	}
+	public TextView getpersonaSkill6()
+	{
+		return personaSkill6;
+	}
+	public TextView getpersonaSkill7()
+	{
+		return personaSkill7;
+	}
+	public TextView getpersonaCost1()
+	{
+		return personaCost1;
+	}
+	
+	public TextView getpersonaCost2()
+	{
+		return personaCost2;
+	}
+	public TextView getpersonaCost3()
+	{
+		return personaCost3;
+	}
+	public TextView getpersonaCost4()
+	{
+		return personaCost4;
+	}
+	public TextView getpersonaCost5()
+	{
+		return personaCost5;
+	}
+	public TextView getpersonaCost6()
+	{
+		return personaCost6;
+	}
+	public TextView getpersonaCost7()
+	{
+		return personaCost7;
+	}
 
+	public TextView getpersonaEffect1()
+	{
+		return personaEffect1;
+	}
+	public TextView getpersonaEffect2()
+	{
+		return personaEffect2;
+	}
+	public TextView getpersonaEffect3()
+	{
+		return personaEffect3;
+	}
+	public TextView getpersonaEffect4()
+	{
+		return personaEffect4;
+	}
+	public TextView getpersonaEffect5()
+	{
+		return personaEffect5;
+	}
+	public TextView getpersonaEffect6()
+	{
+		return personaEffect6;
+	}
+	public TextView getpersonaEffect7()
+	{
+		return personaEffect7;
+	}
+	
+	public TextView getpersonaSkillLevel1()
+	{
+		return personaSkillLevel1;
+	}
+	public TextView getpersonaSkillLevel2()
+	{
+		return personaSkillLevel2;
+	}
+	
+	public TextView getpersonaSkillLevel3()
+	{
+		return personaSkillLevel3;
+	}
+	
+	public TextView getpersonaSkillLevel4()
+	{
+		return personaSkillLevel4;
+	}
+	public TextView getpersonaSkillLevel5()
+	{
+		return personaSkillLevel5;
+	}
+	
+	public TextView getpersonaSkillLevel6()
+	{
+		return personaSkillLevel6;
+	}
+	
+	public TextView getpersonaSkillLevel7()
+	{
+		return personaSkillLevel7;
+	}
+	
+	private  ()
+	{
+		
+	}
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{
@@ -509,10 +730,20 @@ public class CharScreen extends Activity
 					{69,55,45,55,32,48},
 					{75,52,56,60,39,48},
 					{80,57,54,50,54,56},
-					{87,61,65,57,61,56}
+					{87,61,65,57,61,56
+						
+
+					
+					
+					}
 				};
 		//* where we initialize all the text views, pics.
 		
+
 		
 	}
+
+	
+	
+		
 }
