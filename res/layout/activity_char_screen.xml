@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res/ctec.p3compendium.controller"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:scrollbars="horizontal|vertical"
     tools:context="${relativePackage}.${activityClass}" >
 
     <TableLayout
@@ -78,7 +79,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="#" />
-
             </LinearLayout>
 
             <LinearLayout
@@ -165,8 +165,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:minHeight="75dp"
-            android:minWidth="90dp"
-            android:scrollbars="horizontal" >
+            android:minWidth="90dp" >
 
             <LinearLayout
                 android:layout_width="10dp"
@@ -285,7 +284,7 @@
         </TableRow>
 
         <TableRow
-            android:id="@+id/tableRow4"
+            android:id="@+id/personaSkillTableRow"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:minHeight="75dp"

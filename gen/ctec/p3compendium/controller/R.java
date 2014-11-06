@@ -1058,7 +1058,8 @@ containing a value of this type.
         public static final int abc_split_action_bar_is_narrow=0x7f070002;
     }
     public static final class color {
-        public static final int abc_search_url_text_holo=0x7f080003;
+        public static final int Blue=0x7f080003;
+        public static final int abc_search_url_text_holo=0x7f080004;
         public static final int abc_search_url_text_normal=0x7f080000;
         public static final int abc_search_url_text_pressed=0x7f080002;
         public static final int abc_search_url_text_selected=0x7f080001;
@@ -1372,6 +1373,7 @@ containing a value of this type.
         public static final int personaResistsShow=0x7f050068;
         public static final int personaSkill=0x7f050072;
         public static final int personaSkillLevel=0x7f05008a;
+        public static final int personaSkillTableRow=0x7f050071;
         public static final int personaSt=0x7f05005a;
         public static final int personaStShow=0x7f05005b;
         public static final int personaWeak=0x7f05006f;
@@ -1413,7 +1415,6 @@ containing a value of this type.
         public static final int statTableRow=0x7f050055;
         public static final int submit_area=0x7f05004a;
         public static final int tabMode=0x7f050014;
-        public static final int tableRow4=0x7f050071;
         public static final int title=0x7f05003c;
         public static final int top=0x7f050004;
         public static final int top_action_bar=0x7f050031;

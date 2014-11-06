@@ -13,19 +13,19 @@ public class CharScreen extends Activity
 	private int [][] stats;
 	private String[] charName;
 	private String charType;
-    private TextView personaName;
-    private TextView personaLevel;
-    private TextView personaSt;
-    private TextView personaMa;
-    private TextView personaEn;
-    private TextView personaAg;
-    private TextView personaLu;
-    private TextView personaInherit;
-    private TextView personaResists;
-    private TextView personaBlock;
-    private TextView personaAbsorbs;
-    private TextView personaReflects;
-    private TextView personaWeak;
+    private TextView personaNameShow;
+    private TextView personaLevelShow;
+    private TextView personaStShow;
+    private TextView personaMaShow;
+    private TextView personaEnShow;
+    private TextView personaAgShow;
+    private TextView personaLuShow;
+    private TextView personaInheritShow;
+    private TextView personaResistsShow;
+    private TextView personaBlockShow;
+    private TextView personaAbsorbsShow;
+    private TextView personaReflectsShow;
+    private TextView personaWeakShow;
     private TextView personaSkill1;
     private TextView personaSkill2;
     private TextView personaSkill3;
@@ -60,63 +60,72 @@ public class CharScreen extends Activity
 	{
 		return stats;
 	}
-
 	public void setStats(int[][] stats)
 	{
 		this.stats = stats;
 	}
+	
+	
+	
+	
+	
+	
 	public TextView getpersonaName()
 	{
-		return personaName;
+		return personaNameShow;
 	}
 	public TextView getpersonaLevel()
 	{
-		return personaLevel;
+		return personaLevelShow;
 	}
 	public TextView getpersonaSt()
 	{
-		return personaSt;
+		return personaStShow;
 	}
 	public TextView getpersonaMa()
 	{
-		return personaMa;
+		return personaMaShow;
 	}
 	public TextView getpersonaEn()
 	{
-		return personaEn;
+		return personaEnShow;
 	}
 	public TextView getpersonaAg()
 	{
-		return personaAg;
+		return personaAgShow;
 	}
 	public TextView getpersonaLu()
 	{
-		return personaLu;
+		return personaLuShow;
 	}
+	
+	
 	public TextView getpersonaInherit()
 	{
-		return personaInherit;
+		return personaInheritShow;
 	}
 	public TextView getpersonaResists()
 	{
-		return personaResists;
+		return personaResistsShow;
 	}
 	public TextView getpersonaBlock()
 	{
-		return personaBlock;
+		return personaBlockShow;
 	}
 	public TextView getpersonaAbsorbs()
 	{
-		return personaAbsorbs;
+		return personaAbsorbsShow;
 	}
 	public TextView getpersonaReflects()
 	{
-		return personaReflects;
+		return personaReflectsShow;
 	}
 	public TextView getpersonaWeak()
 	{
-		return personaWeak;
+		return personaWeakShow;
 	}
+	
+	
 	public TextView getpersonaSkill1()
 	{
 		return personaSkill1;
@@ -133,7 +142,6 @@ public class CharScreen extends Activity
 	{
 		return personaSkill4;
 	}
-	
 	public TextView getpersonaSkill5()
 	{
 		return personaSkill5;
@@ -146,11 +154,12 @@ public class CharScreen extends Activity
 	{
 		return personaSkill7;
 	}
+	
+	
 	public TextView getpersonaCost1()
 	{
 		return personaCost1;
 	}
-	
 	public TextView getpersonaCost2()
 	{
 		return personaCost2;
@@ -213,12 +222,10 @@ public class CharScreen extends Activity
 	{
 		return personaSkillLevel2;
 	}
-	
 	public TextView getpersonaSkillLevel3()
 	{
 		return personaSkillLevel3;
 	}
-	
 	public TextView getpersonaSkillLevel4()
 	{
 		return personaSkillLevel4;
@@ -227,22 +234,21 @@ public class CharScreen extends Activity
 	{
 		return personaSkillLevel5;
 	}
-	
 	public TextView getpersonaSkillLevel6()
 	{
 		return personaSkillLevel6;
 	}
-	
 	public TextView getpersonaSkillLevel7()
 	{
 		return personaSkillLevel7;
 	}
 	
-	private  ()
-	{
-		
-	}
-	
+//	 public Orpheus  (TextViewpersonaName,TextView personaLevel,TextView personaSt,TextView personaMa,TextView personaEn,TextView personaAg,TextView personaLu)
+//	{
+//		 this.personaNameShow= "Orpheus";
+//		 this.personaAbsorbsShow = "";
+//	}
+//	
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{
@@ -585,7 +591,7 @@ public class CharScreen extends Activity
 					{37,29,19,24,29,26},
 					{43,35,24,31,21,25},
 					{53,42,45,34,30,34},
-					/**
+					/**0
 					 * Justice
 					 */
 					{4,4,5,3,4,3},
