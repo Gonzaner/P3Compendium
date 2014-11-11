@@ -1058,8 +1058,9 @@ containing a value of this type.
         public static final int abc_split_action_bar_is_narrow=0x7f070002;
     }
     public static final class color {
+        public static final int Black=0x7f080004;
         public static final int Blue=0x7f080003;
-        public static final int abc_search_url_text_holo=0x7f080004;
+        public static final int abc_search_url_text_holo=0x7f080005;
         public static final int abc_search_url_text_normal=0x7f080000;
         public static final int abc_search_url_text_pressed=0x7f080002;
         public static final int abc_search_url_text_selected=0x7f080001;
@@ -1332,6 +1333,15 @@ containing a value of this type.
         public static final int fill=0x7f05000d;
         public static final int fill_horizontal=0x7f05000b;
         public static final int fill_vertical=0x7f050009;
+        public static final int fusionSpell=0x7f050093;
+        public static final int fusionSpellCost=0x7f050095;
+        public static final int fusionSpellCostShow=0x7f050096;
+        public static final int fusionSpellEffect=0x7f050097;
+        public static final int fusionSpellEffectShow=0x7f050098;
+        public static final int fusionSpellPersonas=0x7f050099;
+        public static final int fusionSpellPersonasShow=0x7f05009a;
+        public static final int fusionSpellShow=0x7f050094;
+        public static final int fusionSpellTableRow=0x7f050092;
         public static final int home=0x7f050025;
         public static final int homeAsUp=0x7f050017;
         public static final int horizontal=0x7f050000;
@@ -1339,7 +1349,7 @@ containing a value of this type.
         public static final int ifRoom=0x7f05001c;
         public static final int image=0x7f050038;
         public static final int left=0x7f050006;
-        public static final int list=0x7f050092;
+        public static final int list=0x7f05009b;
         public static final int listMode=0x7f050013;
         public static final int list_item=0x7f05003a;
         public static final int middle=0x7f050024;

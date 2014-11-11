@@ -27,11 +27,11 @@ public class Compendium extends Activity
 		listView = (ListView) findViewById(R.id.list);
 		setupListeners();
 		
-//		setkey("Trump")
+//		setKey("Trump")
 //		{
 //			setup("Trump","Fool")
 //		}
-		
+//	
 					
 		values = new String[] 
 				

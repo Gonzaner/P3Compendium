@@ -68,7 +68,7 @@ public class CharScreen extends Activity
 	
 	
 	
-	
+	//StatTableRow
 	
 	public TextView getpersonaName()
 	{
@@ -99,6 +99,7 @@ public class CharScreen extends Activity
 		return personaLuShow;
 	}
 	
+	//personaGenInfoTabelRow
 	
 	public TextView getpersonaInherit()
 	{
@@ -125,6 +126,7 @@ public class CharScreen extends Activity
 		return personaWeakShow;
 	}
 	
+	//personaSkillTabel
 	
 	public TextView getpersonaSkill1()
 	{
@@ -243,12 +245,7 @@ public class CharScreen extends Activity
 		return personaSkillLevel7;
 	}
 	
-//	 public Orpheus  (TextViewpersonaName,TextView personaLevel,TextView personaSt,TextView personaMa,TextView personaEn,TextView personaAg,TextView personaLu)
-//	{
-//		 this.personaNameShow= "Orpheus";
-//		 this.personaAbsorbsShow = "";
-//	}
-//	
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{
