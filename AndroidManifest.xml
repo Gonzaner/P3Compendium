@@ -27,7 +27,7 @@
             android:label="@string/title_activity_magician" >
         </activity>
         <activity
-            android:name=".CharScreen"
+            android:name="ctec.p3compendium.controller.CharScreen"
             android:label="@string/title_activity_char_screen" >
         </activity>
     </application>

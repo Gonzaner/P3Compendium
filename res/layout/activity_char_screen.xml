@@ -8,6 +8,7 @@
     tools:context="${relativePackage}.${activityClass}" >
 
     <TableLayout
+        android:id="@+id/tableLayout1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -18,7 +19,7 @@
 
         <TableRow
             android:id="@+id/statTableRow"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:minHeight="75dp"
             android:minWidth="75dp"
@@ -62,7 +63,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="#" />
-
             </LinearLayout>
 
             <LinearLayout
@@ -102,7 +102,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="#" />
-
             </LinearLayout>
 
             <LinearLayout
@@ -122,7 +121,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="#" />
-
             </LinearLayout>
 
             <LinearLayout
@@ -142,7 +140,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="#" />
-
             </LinearLayout>
 
             <LinearLayout
@@ -163,9 +160,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="#" />
-
             </LinearLayout>
-
         </TableRow>
 
         <TableRow
@@ -192,7 +187,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="element" />
-
             </LinearLayout>
 
             <LinearLayout
@@ -212,7 +206,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="attack" />
-
             </LinearLayout>
 
             <LinearLayout
@@ -232,7 +225,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="attack" />
-
             </LinearLayout>
 
             <LinearLayout
@@ -252,7 +244,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="attack" />
-
             </LinearLayout>
 
             <LinearLayout
@@ -272,7 +263,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="attack" />
-
             </LinearLayout>
 
             <LinearLayout
@@ -292,9 +282,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="attack" />
-
             </LinearLayout>
-
         </TableRow>
 
         <TableRow
@@ -358,7 +346,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="TextView" />
-
             </LinearLayout>
 
             <LinearLayout
@@ -414,14 +401,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="TextView" />
-
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@color/Blue"
-                android:orientation="vertical" >
+                android:orientation="vertical"
+                android:paddingLeft="20dp" >
 
                 <TextView
                     android:id="@+id/personaEffect"
@@ -470,14 +457,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="TextView" />
-
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@color/Blue"
-                android:orientation="vertical" >
+                android:orientation="vertical"
+                android:paddingLeft="50dp" >
 
                 <TextView
                     android:id="@+id/personaSkillLevel"
@@ -526,99 +513,94 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="TextView" />
-
             </LinearLayout>
 
         </TableRow>
+    </TableLayout>
 
-        <TableRow
-            android:id="@+id/fusionSpellTableRow"
+    <TableRow
+        android:id="@+id/fusionSpellTableRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tableLayout1"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="20dp" >
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="20dp" >
+            android:background="@color/Blue"
+            android:orientation="vertical" >
 
-            <LinearLayout
+            <TextView
+                android:id="@+id/fusionSpell"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@color/Blue"
-                android:orientation="vertical" >
+                android:text="Fusion Spell" />
 
-                <TextView
-                    android:id="@+id/fusionSpell"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Fusion Spell" />
-
-                <TextView
-                    android:id="@+id/fusionSpellShow"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="TextView" />
-
-            </LinearLayout>
-
-            <LinearLayout
+            <TextView
+                android:id="@+id/fusionSpellShow"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@color/Blue"
-                android:orientation="vertical" >
+                android:text="TextView" />
+        </LinearLayout>
 
-                <TextView
-                    android:id="@+id/fusionSpellCost"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text=" Spell Cost" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/Blue"
+            android:orientation="vertical" >
 
-                <TextView
-                    android:id="@+id/fusionSpellCostShow"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="TextView" />
-
-            </LinearLayout>
-
-            <LinearLayout
+            <TextView
+                android:id="@+id/fusionSpellCost"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@color/Blue"
-                android:orientation="vertical" >
+                android:text=" Spell Cost" />
 
-                <TextView
-                    android:id="@+id/fusionSpellEffect"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="SpellEffect" />
-
-                <TextView
-                    android:id="@+id/fusionSpellEffectShow"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="TextView" />
-
-            </LinearLayout>
-
-            <LinearLayout
+            <TextView
+                android:id="@+id/fusionSpellCostShow"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@color/Blue"
-                android:orientation="vertical" >
+                android:text="TextView" />
+        </LinearLayout>
 
-                <TextView
-                    android:id="@+id/fusionSpellPersonas"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Personas needed" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/Blue"
+            android:orientation="vertical" >
 
-                <TextView
-                    android:id="@+id/fusionSpellPersonasShow"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="TextView" />
+            <TextView
+                android:id="@+id/fusionSpellEffect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SpellEffect" />
 
-            </LinearLayout>
+            <TextView
+                android:id="@+id/fusionSpellEffectShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+        </LinearLayout>
 
-        </TableRow>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/Blue"
+            android:orientation="vertical" >
 
-    </TableLayout>
+            <TextView
+                android:id="@+id/fusionSpellPersonas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Personas needed" />
+
+            <TextView
+                android:id="@+id/fusionSpellPersonasShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+        </LinearLayout>
+    </TableRow>
 
 </RelativeLayout>

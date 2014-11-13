@@ -3,17 +3,18 @@ package ctec.p3compendium.controller;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
+import android.view.*;
 import android.widget.*;
-
+/** 
+* @author Gray
+* @version 2.0 11/13/14
+*/
 public class Compendium extends Activity
 {
 	
 	private ListView listView;
-	private String[] values;
-	
+	private String[] Trump;
+	 
 	
 	
 	@Override
@@ -27,13 +28,9 @@ public class Compendium extends Activity
 		listView = (ListView) findViewById(R.id.list);
 		setupListeners();
 		
-//		setKey("Trump")
-//		{
-//			setup("Trump","Fool")
-//		}
-//	
+		
 					
-		values = new String[] 
+		Trump = new String[] 
 				
 		{ 
                 "Fool",
@@ -61,7 +58,7 @@ public class Compendium extends Activity
 		
 		
 		
-		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, android.R.id.text1, values);
+		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, android.R.id.text1, Trump);
 		 listView.setAdapter(adapter);
 		 
 		 
@@ -80,7 +77,7 @@ public class Compendium extends Activity
 				public void onItemClick(AdapterView<?> parent, View view,
 						int position, long id)
 				{
-					Toast.makeText(getBaseContext(), values[position], Toast.LENGTH_LONG).show();
+					Toast.makeText(getBaseContext(), Trump[position], Toast.LENGTH_LONG).show();
 					
 				}
 			});
