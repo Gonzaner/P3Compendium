@@ -1,5 +1,6 @@
 package ctec.p3compendium.controller;
 
+import ctec.stateproject.controller.DisplayActivity;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -78,10 +79,22 @@ public class Compendium extends Activity
 						int position, long id)
 				{
 					Toast.makeText(getBaseContext(), Trump[position], Toast.LENGTH_LONG).show();
-					
+					Intent transferIntent = new Intent(view.getContext(), Arcanas.class);
+					startActivityForResult(transferIntent, Trump[position]);
 				}
 			});
 		 }
+
+
+
+
+
+	protected void startActivityForResult(Intent transferIntent, String string)
+	{
+		// TODO Auto-generated method stub
+		
+	}
+	
 }
 	
 
