@@ -1,6 +1,6 @@
 package ctec.p3compendium.controller;
 
-import ctec.stateproject.controller.DisplayActivity;
+import ctec.p3compendium.model.Persona3State;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;

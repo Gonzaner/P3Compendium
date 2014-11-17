@@ -1,9 +1,7 @@
 package ctec.p3compendium.controller;
 
+import ctec.p3compendium.model.Persona3State;
 import java.util.Set;
-
-import ctec.p3compendium.controller.R;
-import ctec.p3compendium.controller.R.layout;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.*;

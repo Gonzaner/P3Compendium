@@ -1,15 +1,25 @@
 package ctec.p3compendium.model;
 
 import android.app.Application;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.*;
+import android.widget.*;
 
 public class Persona3State extends Application
 {
 	private int [][] stats;
-	private String[] charName;
+	public String[] charName;
 	private String charType;
+	private String[] Arcanas;
 	
 	public void onCreate()
 	{
+		Arcanas = new String []
+				{
+					"",
+					""
+				};
 		charType = ("type");
 		
 		charName = new String[]
@@ -498,8 +508,8 @@ public class Persona3State extends Application
 					
 					
 					}
+					
 				};
-		//* where we initialize all the text views, pics.
 		
 
 		
