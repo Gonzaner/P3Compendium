@@ -19,10 +19,10 @@ public class Arcanas extends Activity
 		
 		arcanaView = (ListView) findViewById(R.id.list);
 		
-		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, android.R.id.text1, appState.charName );
-		 arcanaView.setAdapter(adapter);
+	//*	ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, android.R.id.text1,   );
+	//*	 arcanaView.setAdapter(adapter);
+		 
 		
-	}
 	
 
-}
+}}

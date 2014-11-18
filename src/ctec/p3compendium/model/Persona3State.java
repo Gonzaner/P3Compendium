@@ -11,15 +11,260 @@ public class Persona3State extends Application
 	private int [][] stats;
 	public String[] charName;
 	private String charType;
-	private String[] Arcanas;
+	public String [] Trump;
+	public String[] foolArcana ,magicianArcana,priestessArcana,empressArcana,emperorArcana,heirophantArcana,loversArcana,chariotArcana,justiceArcana, 
+					hermitArcana,fortuneArcana,strengthArcana,hangedmanArcana,deathArcana,tempranceArcana,devilArcana,towerArcana,starArcana,        
+					moonArcana,sunArcana,judgmentArcana,aeonArcana; 
+	
 	
 	public void onCreate()
 	{
-		Arcanas = new String []
+		
+	
+	
+		foolArcana = new String []
+			{
+				"Orpheus",
+				"Slime",
+				"Legion",
+				"Ose",
+				"Black Frost",
+				"Decarabia",
+				"Loki",
+				"Susano-o",
+				"Orpheus Telos",
+			};
+		
+		magicianArcana = new String[]
+			{
+				"Nekomata",
+				"Jack Frost",
+				"Pyro Jack",
+				"Hua Po",
+				"Sati",
+				"Orobas",
+				"Rangda",
+				"Surt"
+			};
+		priestessArcana = new String []
 				{
-					"",
-					""
+				"Apsaras",
+				"Unicorn",
+				"High Pixie",
+				"Sarasvati",
+				"Ganga",
+				"Parvati",
+				"Kikuri-hime",
+				"Scathach",
 				};
+		
+		empressArcana = new String []
+				{
+				"Leanan Sidhe",
+				"Yaksini",
+				"Laksmi",
+				"Hariti",
+				"Gabriel",
+				"Mother Harlot",
+				"Skadi",
+				"Alilat"
+				};
+				
+		emperorArcana = new String []
+				{
+				"Forneus",
+				"Oberon",
+				"Take-Mikazuchi",
+				"King Frost",
+				"Raja Naga",
+				"Kingu",
+				"Barong",
+				"Odin"
+				};
+		heirophantArcana = new String []
+				{
+				"Omoikane",
+				"Berith",
+				"Shiisaa",
+				"Flauros",
+				"Thoth",
+				"Hokuto Seikun",
+				"Daisoujou",
+				"Kohryu"
+				};
+		loversArcana = new String []
+				{
+				"Pixie",
+				"Alp",
+				"Narcissus",
+				"Queen Mab",
+				"Saki Mitama",
+				"Titania",
+				"Raphael",
+				"Cybele"
+				};
+		chariotArcana = new String []
+				{
+				"Ara Mitama",
+				"Chimera",
+				"Zouchouten",
+				"Ares",
+				"Oumitsunu",
+				"Nata Taishi",
+				"Koumokuten",
+				"Thor"
+				};
+		justiceArcana = new String []
+				{
+				"Angel",
+				"Archangel",
+				"Principlaity",
+				"Power",
+				"Virtue",
+				"Dominion",
+				"Throne",
+				"Melchizedek"
+				};
+		hermitArcana = new String []
+				{
+				"Yomotsu-Shikome",
+				"Naga",
+				"Lamia",
+				"Mothman",
+				"Taraka",
+				"Kurama Tengu",
+				"Nebrios",
+				"Kumbhanda",
+				"Arahabaki"
+				};
+		fortuneArcana = new String []
+				{
+				"Fortuna",
+				"Empus",
+				"Kusi Mitama",
+				"Clotho",
+				"Lachesis",
+				"Atropos",
+				"Norn"
+				};
+		strengthArcana = new String []
+				{
+				"Cerberus",
+				"Valkyrie",
+				"Rakshasa",
+				"Titan",
+				"Jikoukuten",
+				"Hanuman",
+				"Narashima",
+				"Kali",
+				"Siegfried"
+				};
+		hangedmanArcana = new String []
+				{
+				"Inugami",
+				"Taka-Minakata",
+				"Orthrus",
+				"Vasuki",
+				"Ubelluris",
+				"Hecatoncheires",
+				"Hell Biker",
+				"Attis"
+				};
+		deathArcana = new String []
+				{
+				"Ghoul",
+				"Pale Rider",
+				"Loa",
+				"Samael",
+				"Mot",
+				"Alice",
+				"Thanatos"
+				};
+		tempranceArcana = new String []
+				{
+				"Nigi Mitama",
+				"Mithra",
+				"Genbu",
+				"Seiryuu",
+				"Okuninushi",
+				"Suzaku",
+				"Byakko",
+				"Yurlungur"
+				};
+		devilArcana = new String []
+				{
+				"Lilim",
+				"Vetala",
+				"Incubus",
+				"Succubus",
+				"Pazuzu",
+				"Lilith",
+				"Abaddon",
+				"Beelzebub"
+				};
+		towerArcana = new String []
+				{
+				"Eligor",
+				"Chu Chulainn",
+				"Bishamonten",
+				"Seiten Taisei",
+				"Masakado",
+				"Mara",
+				"Shiva",
+				"Chi You"
+				};
+		starArcana = new String []
+				{
+				"Nandi",
+				"Kaiwan",
+				"Ganesha",
+				"Garuda",
+				"Kartikeya",
+				"Saturnus",
+				"Helel"
+				};
+		moonArcana = new String []
+				{
+				"Gurr",
+				"Yamata-no-Orochi",
+				"Girimehkala",
+				"Dionysus",
+				"Chernobog",
+				"Seth",
+				"Baal Zebul",
+				"Sandalphon"
+				};
+		sunArcana = new String []
+				{
+				"Yatagarasu",
+				"Quetzalcoatl",
+				"Jatayu",
+				"Horus",
+				"Sparna",
+				"Vishnu",
+				"Asura"
+				};
+		judgmentArcana = new String []
+				{
+				"Anubis",
+				"Trumpeter",
+				"Michael",
+				"Satan",
+				"Lucifer",
+				"Messiah"
+				};
+		aeonArcana = new String []
+				{
+				"Uriel",
+				"Nidhogg",
+				"Ananta",
+				"Atavaka",
+				"Metatron"
+				};
+		
+				
+				
+	
 		charType = ("type");
 		
 		charName = new String[]
@@ -117,7 +362,7 @@ public class Persona3State extends Application
 					/**
 					 * Justice
 					 */
-					"Amgel",
+					"Angel",
 					"Archangel",
 					"Principlaity",
 					"Power",

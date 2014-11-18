@@ -15,7 +15,7 @@ public class Compendium extends Activity
 	
 	private ListView listView;
 	private String[] Trump;
-	 
+	private Persona3State appState; 
 	
 	
 	@Override
@@ -24,7 +24,7 @@ public class Compendium extends Activity
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_compendium);
 		
-		
+		appState = (Persona3State) this.getApplication();
 		
 		listView = (ListView) findViewById(R.id.list);
 		setupListeners();
@@ -78,9 +78,9 @@ public class Compendium extends Activity
 				public void onItemClick(AdapterView<?> parent, View view,
 						int position, long id)
 				{
-					Toast.makeText(getBaseContext(), Trump[position], Toast.LENGTH_LONG).show();
+					
 					Intent transferIntent = new Intent(view.getContext(), Arcanas.class);
-					startActivityForResult(transferIntent, Trump[position]);
+					startActivityForResult(transferIntent, 0);
 				}
 			});
 		 }
