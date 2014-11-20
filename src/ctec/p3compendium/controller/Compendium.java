@@ -78,22 +78,39 @@ public class Compendium extends Activity
 				public void onItemClick(AdapterView<?> parent, View view,
 						int position, long id)
 				{
+					if( position == 0)
+					{
+						Intent transferIntent = new Intent(view.getContext(), Arcanas.class);
+						startActivityForResult(transferIntent, 0);
+					}
 					
-					Intent transferIntent = new Intent(view.getContext(), Arcanas.class);
-					startActivityForResult(transferIntent, 0);
+					else if ( position == 1)
+					{
+						Intent transferIntent = new Intent(view.getContext(), Arcanas.class);
+						startActivityForResult(transferIntent, 0);
+					}
+					
+					else if (position == 2)
+					{
+						Intent transferIntent = new Intent(view.getContext(), Arcanas.class);
+						startActivityForResult(transferIntent, 0);
+					}
+					
+					else if (position == 3)
+					{
+						Intent transferIntent = new Intent(view.getContext(), Arcanas.class);
+						startActivityForResult(transferIntent, 0);
+					}
+					
+					else if (position == 4)
+					{
+						Intent transferIntent = new Intent(view.getContext(), Arcanas.class);
+						startActivityForResult(transferIntent, 0);
+					}
 				}
 			});
 		 }
-
-
-
-
-
-	protected void startActivityForResult(Intent transferIntent, String string)
-	{
-		// TODO Auto-generated method stub
-		
-	}
+	
 	
 }
 	

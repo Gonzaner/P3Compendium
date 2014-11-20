@@ -11,7 +11,6 @@ public class Persona3State extends Application
 	private int [][] stats;
 	public String[] charName;
 	private String charType;
-	public String [] Trump;
 	public String[] foolArcana ,magicianArcana,priestessArcana,empressArcana,emperorArcana,heirophantArcana,loversArcana,chariotArcana,justiceArcana, 
 					hermitArcana,fortuneArcana,strengthArcana,hangedmanArcana,deathArcana,tempranceArcana,devilArcana,towerArcana,starArcana,        
 					moonArcana,sunArcana,judgmentArcana,aeonArcana; 
