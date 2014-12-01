@@ -2,9 +2,7 @@
 <resources>
 
     <string name="app_name">P3Compendium</string>
-    <string name="fool_text">Fool Arcana</string>
-    <string name="title_activity_magician">Magician</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="title_activity_char_screen">CharScreen</string>
+    <string name="title_activity_char_screen">Persona</string>
+    <string name="title_activity_arcana">Arcana</string>
 
 </resources>
