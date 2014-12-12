@@ -15,317 +15,7 @@ public class Persona3State extends Application
 	private String[] foolArcana ,magicianArcana,priestessArcana,empressArcana,emperorArcana,heirophantArcana,loversArcana,chariotArcana,justiceArcana, 
 					hermitArcana,fortuneArcana,strengthArcana,hangedmanArcana,deathArcana,tempranceArcana,devilArcana,towerArcana,starArcana,        
 					moonArcana,sunArcana,judgmentArcana,aeonArcana; 
-	public int[][] getStats()
-	{
-		return stats;
-	}
-
-
-	public String[] getCharName()
-	{
-		return charName;
-	}
-
-
-	public String getCharType()
-	{
-		return charType;
-	}
-
-
-	public String[] getFoolArcana()
-	{
-		return foolArcana;
-	}
-
-
-	public String[] getMagicianArcana()
-	{
-		return magicianArcana;
-	}
-
-
-	public String[] getPriestessArcana()
-	{
-		return priestessArcana;
-	}
-
-
-	public String[] getEmpressArcana()
-	{
-		return empressArcana;
-	}
-
-
-	public String[] getEmperorArcana()
-	{
-		return emperorArcana;
-	}
-
-
-	public String[] getHeirophantArcana()
-	{
-		return heirophantArcana;
-	}
-
-
-	public String[] getLoversArcana()
-	{
-		return loversArcana;
-	}
-
-
-	public String[] getChariotArcana()
-	{
-		return chariotArcana;
-	}
-
-
-	public String[] getJusticeArcana()
-	{
-		return justiceArcana;
-	}
-
-
-	public String[] getHermitArcana()
-	{
-		return hermitArcana;
-	}
-
-
-	public String[] getFortuneArcana()
-	{
-		return fortuneArcana;
-	}
-
-
-	public String[] getStrengthArcana()
-	{
-		return strengthArcana;
-	}
-
-
-	public String[] getHangedmanArcana()
-	{
-		return hangedmanArcana;
-	}
-
-
-	public String[] getDeathArcana()
-	{
-		return deathArcana;
-	}
-
-
-	public String[] getTempranceArcana()
-	{
-		return tempranceArcana;
-	}
-
-
-	public String[] getDevilArcana()
-	{
-		return devilArcana;
-	}
-
-
-	public String[] getTowerArcana()
-	{
-		return towerArcana;
-	}
-
-
-	public String[] getStarArcana()
-	{
-		return starArcana;
-	}
-
-
-	public String[] getMoonArcana()
-	{
-		return moonArcana;
-	}
-
-
-	public String[] getSunArcana()
-	{
-		return sunArcana;
-	}
-
-
-	public String[] getJudgmentArcana()
-	{
-		return judgmentArcana;
-	}
-
-
-	public String[] getAeonArcana()
-	{
-		return aeonArcana;
-	}
-
-
-	public int getSelectedIndex()
-	{
-		return selectedIndex;
-	}
-
-
-	public void setStats(int[][] stats)
-	{
-		this.stats = stats;
-	}
-
-
-	public void setCharName(String[] charName)
-	{
-		this.charName = charName;
-	}
-
-
-	public void setCharType(String charType)
-	{
-		this.charType = charType;
-	}
-
-
-	public void setFoolArcana(String[] foolArcana)
-	{
-		this.foolArcana = foolArcana;
-	}
-
-
-	public void setMagicianArcana(String[] magicianArcana)
-	{
-		this.magicianArcana = magicianArcana;
-	}
-
-
-	public void setPriestessArcana(String[] priestessArcana)
-	{
-		this.priestessArcana = priestessArcana;
-	}
-
-
-	public void setEmpressArcana(String[] empressArcana)
-	{
-		this.empressArcana = empressArcana;
-	}
-
-
-	public void setEmperorArcana(String[] emperorArcana)
-	{
-		this.emperorArcana = emperorArcana;
-	}
-
-
-	public void setHeirophantArcana(String[] heirophantArcana)
-	{
-		this.heirophantArcana = heirophantArcana;
-	}
-
-
-	public void setLoversArcana(String[] loversArcana)
-	{
-		this.loversArcana = loversArcana;
-	}
-
-
-	public void setChariotArcana(String[] chariotArcana)
-	{
-		this.chariotArcana = chariotArcana;
-	}
-
-
-	public void setJusticeArcana(String[] justiceArcana)
-	{
-		this.justiceArcana = justiceArcana;
-	}
-
-
-	public void setHermitArcana(String[] hermitArcana)
-	{
-		this.hermitArcana = hermitArcana;
-	}
-
-
-	public void setFortuneArcana(String[] fortuneArcana)
-	{
-		this.fortuneArcana = fortuneArcana;
-	}
-
-
-	public void setStrengthArcana(String[] strengthArcana)
-	{
-		this.strengthArcana = strengthArcana;
-	}
-
-
-	public void setHangedmanArcana(String[] hangedmanArcana)
-	{
-		this.hangedmanArcana = hangedmanArcana;
-	}
-
-
-	public void setDeathArcana(String[] deathArcana)
-	{
-		this.deathArcana = deathArcana;
-	}
-
-
-	public void setTempranceArcana(String[] tempranceArcana)
-	{
-		this.tempranceArcana = tempranceArcana;
-	}
-
-
-	public void setDevilArcana(String[] devilArcana)
-	{
-		this.devilArcana = devilArcana;
-	}
-
-
-	public void setTowerArcana(String[] towerArcana)
-	{
-		this.towerArcana = towerArcana;
-	}
-
-
-	public void setStarArcana(String[] starArcana)
-	{
-		this.starArcana = starArcana;
-	}
-
-
-	public void setMoonArcana(String[] moonArcana)
-	{
-		this.moonArcana = moonArcana;
-	}
-
-
-	public void setSunArcana(String[] sunArcana)
-	{
-		this.sunArcana = sunArcana;
-	}
-
-
-	public void setJudgmentArcana(String[] judgmentArcana)
-	{
-		this.judgmentArcana = judgmentArcana;
-	}
-
-
-	public void setAeonArcana(String[] aeonArcana)
-	{
-		this.aeonArcana = aeonArcana;
-	}
-
-
-	public void setSelectedIndex(int selectedIndex)
-	{
-		this.selectedIndex = selectedIndex;
-	}
-
+		
 
 	private int selectedIndex;
 	
@@ -337,12 +27,11 @@ public class Persona3State extends Application
 	 * The Arrays of what needs to be passed to the Arcanas screen and then put into it's listview.
 	 */
 		selectedIndex = -1;
-		arcanas = new String[][] 
-				{
-					foolArcana,magicianArcana,priestessArcana,empressArcana,emperorArcana,heirophantArcana,loversArcana,chariotArcana,justiceArcana, 
-					hermitArcana,fortuneArcana,strengthArcana,hangedmanArcana,deathArcana,tempranceArcana,devilArcana,towerArcana,starArcana,        
-					moonArcana,sunArcana,judgmentArcana,aeonArcana
-				};
+		
+		
+		
+		
+		
 		foolArcana = new String []
 			{
 				"Orpheus",
@@ -1074,7 +763,12 @@ public class Persona3State extends Application
 			
 				};
 		
-
+		arcanas = new String[][] 
+				{
+					foolArcana,magicianArcana,priestessArcana,empressArcana,emperorArcana,heirophantArcana,loversArcana,chariotArcana,justiceArcana, 
+					hermitArcana,fortuneArcana,strengthArcana,hangedmanArcana,deathArcana,tempranceArcana,devilArcana,towerArcana,starArcana,        
+					moonArcana,sunArcana,judgmentArcana,aeonArcana
+				};
 		
 	}
 
@@ -1082,7 +776,316 @@ public class Persona3State extends Application
 	{
 		return arcanas;
 	}
+	public int[][] getStats()
+	{
+		return stats;
+	}
 
+
+	public String[] getCharName()
+	{
+		return charName;
+	}
+
+
+	public String getCharType()
+	{
+		return charType;
+	}
+
+
+	public String[] getFoolArcana()
+	{
+		return foolArcana;
+	}
+
+
+	public String[] getMagicianArcana()
+	{
+		return magicianArcana;
+	}
+
+
+	public String[] getPriestessArcana()
+	{
+		return priestessArcana;
+	}
+
+
+	public String[] getEmpressArcana()
+	{
+		return empressArcana;
+	}
+
+
+	public String[] getEmperorArcana()
+	{
+		return emperorArcana;
+	}
+
+
+	public String[] getHeirophantArcana()
+	{
+		return heirophantArcana;
+	}
+
+
+	public String[] getLoversArcana()
+	{
+		return loversArcana;
+	}
+
+
+	public String[] getChariotArcana()
+	{
+		return chariotArcana;
+	}
+
+
+	public String[] getJusticeArcana()
+	{
+		return justiceArcana;
+	}
+
+
+	public String[] getHermitArcana()
+	{
+		return hermitArcana;
+	}
+
+
+	public String[] getFortuneArcana()
+	{
+		return fortuneArcana;
+	}
+
+
+	public String[] getStrengthArcana()
+	{
+		return strengthArcana;
+	}
+
+
+	public String[] getHangedmanArcana()
+	{
+		return hangedmanArcana;
+	}
+
+
+	public String[] getDeathArcana()
+	{
+		return deathArcana;
+	}
+
+
+	public String[] getTempranceArcana()
+	{
+		return tempranceArcana;
+	}
+
+
+	public String[] getDevilArcana()
+	{
+		return devilArcana;
+	}
+
+
+	public String[] getTowerArcana()
+	{
+		return towerArcana;
+	}
+
+
+	public String[] getStarArcana()
+	{
+		return starArcana;
+	}
+
+
+	public String[] getMoonArcana()
+	{
+		return moonArcana;
+	}
+
+
+	public String[] getSunArcana()
+	{
+		return sunArcana;
+	}
+
+
+	public String[] getJudgmentArcana()
+	{
+		return judgmentArcana;
+	}
+
+
+	public String[] getAeonArcana()
+	{
+		return aeonArcana;
+	}
+
+
+	public int getSelectedIndex()
+	{
+		return selectedIndex;
+	}
+
+
+	public void setStats(int[][] stats)
+	{
+		this.stats = stats;
+	}
+
+
+	public void setCharName(String[] charName)
+	{
+		this.charName = charName;
+	}
+
+
+	public void setCharType(String charType)
+	{
+		this.charType = charType;
+	}
+
+
+	public void setFoolArcana(String[] foolArcana)
+	{
+		this.foolArcana = foolArcana;
+	}
+
+
+	public void setMagicianArcana(String[] magicianArcana)
+	{
+		this.magicianArcana = magicianArcana;
+	}
+
+
+	public void setPriestessArcana(String[] priestessArcana)
+	{
+		this.priestessArcana = priestessArcana;
+	}
+
+
+	public void setEmpressArcana(String[] empressArcana)
+	{
+		this.empressArcana = empressArcana;
+	}
+
+
+	public void setEmperorArcana(String[] emperorArcana)
+	{
+		this.emperorArcana = emperorArcana;
+	}
+
+
+	public void setHeirophantArcana(String[] heirophantArcana)
+	{
+		this.heirophantArcana = heirophantArcana;
+	}
+
+
+	public void setLoversArcana(String[] loversArcana)
+	{
+		this.loversArcana = loversArcana;
+	}
+
+
+	public void setChariotArcana(String[] chariotArcana)
+	{
+		this.chariotArcana = chariotArcana;
+	}
+
+
+	public void setJusticeArcana(String[] justiceArcana)
+	{
+		this.justiceArcana = justiceArcana;
+	}
+
+
+	public void setHermitArcana(String[] hermitArcana)
+	{
+		this.hermitArcana = hermitArcana;
+	}
+
+
+	public void setFortuneArcana(String[] fortuneArcana)
+	{
+		this.fortuneArcana = fortuneArcana;
+	}
+
+
+	public void setStrengthArcana(String[] strengthArcana)
+	{
+		this.strengthArcana = strengthArcana;
+	}
+
+
+	public void setHangedmanArcana(String[] hangedmanArcana)
+	{
+		this.hangedmanArcana = hangedmanArcana;
+	}
+
+
+	public void setDeathArcana(String[] deathArcana)
+	{
+		this.deathArcana = deathArcana;
+	}
+
+
+	public void setTempranceArcana(String[] tempranceArcana)
+	{
+		this.tempranceArcana = tempranceArcana;
+	}
+
+
+	public void setDevilArcana(String[] devilArcana)
+	{
+		this.devilArcana = devilArcana;
+	}
+
+
+	public void setTowerArcana(String[] towerArcana)
+	{
+		this.towerArcana = towerArcana;
+	}
+
+
+	public void setStarArcana(String[] starArcana)
+	{
+		this.starArcana = starArcana;
+	}
+
+
+	public void setMoonArcana(String[] moonArcana)
+	{
+		this.moonArcana = moonArcana;
+	}
+
+
+	public void setSunArcana(String[] sunArcana)
+	{
+		this.sunArcana = sunArcana;
+	}
+
+
+	public void setJudgmentArcana(String[] judgmentArcana)
+	{
+		this.judgmentArcana = judgmentArcana;
+	}
+
+
+	public void setAeonArcana(String[] aeonArcana)
+	{
+		this.aeonArcana = aeonArcana;
+	}
+
+
+	public void setSelectedIndex(int selectedIndex)
+	{
+		this.selectedIndex = selectedIndex;
+	}
 
 
 	

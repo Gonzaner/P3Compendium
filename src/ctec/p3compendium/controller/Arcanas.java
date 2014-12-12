@@ -20,7 +20,7 @@ public class Arcanas extends Activity
 		setContentView(R.layout.activity_arcana);
 		appState = (Persona3State) this.getApplication();
 		
-		arcanaView = (ListView) findViewById(R.id.list);
+		arcanaView = (ListView) findViewById(R.id.listView1);
 		setupList();
 		returnButton =(Button) findViewById(R.id.returnButton);
 		
@@ -34,9 +34,9 @@ public class Arcanas extends Activity
 			@Override
 			public void onClick(View v)
 			{
-				Intent returnIntent = new Intent();
-				setResult(RESULT_OK, returnIntent);
-				finish();
+				Intent returnIntent = new Intent(v.getContext(), Compendium.class);
+				startActivityForResult(returnIntent, 0);
+				
 				
 			}
 		});
@@ -44,6 +44,8 @@ public class Arcanas extends Activity
 	private void setupList()
 	{
 		String [] currentArcana = appState.getArcanas()[appState.getSelectedIndex()];	
-		ArrayAdapter arcanaAdapter = new ArrayAdapter<String>(this, R.layout.activity_arcana, currentArcana);
+		
+		ArrayAdapter<String> arcanaAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, android.R.id.text1, currentArcana);
+		arcanaView.setAdapter(arcanaAdapter); 
 	}
 }

@@ -42,7 +42,7 @@
                     android:id="@+id/personaNameShow"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Name" />
+                    android:text="@string/StatsName" />
             </LinearLayout>
 
             <LinearLayout
@@ -62,7 +62,7 @@
                     android:id="@+id/personaLevelShow"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="#" />
+                    android:text="@string/StatsLvl" />
             </LinearLayout>
 
             <LinearLayout
@@ -82,7 +82,7 @@
                     android:id="@+id/personaStShow"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="#" />
+                    android:text="@string/StatsSt" />
             </LinearLayout>
 
             <LinearLayout
@@ -101,7 +101,7 @@
                     android:id="@+id/personaMaShow"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="#" />
+                    android:text="@string/StatsMa" />
             </LinearLayout>
 
             <LinearLayout
@@ -120,7 +120,7 @@
                     android:id="@+id/personaEnShow"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="#" />
+                    android:text="@string/StatsEn" />
             </LinearLayout>
 
             <LinearLayout
@@ -139,7 +139,7 @@
                     android:id="@+id/personaAgShow"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="#" />
+                    android:text="@string/StatsAg" />
             </LinearLayout>
 
             <LinearLayout
@@ -159,7 +159,7 @@
                     android:id="@+id/personaLuShow"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="#" />
+                    android:text="@string/StatsLu" />
             </LinearLayout>
         </TableRow>
 
@@ -186,7 +186,7 @@
                     android:id="@+id/personaInheritShow"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="element" />
+                    android:text="@string/GenInfoIn" />
             </LinearLayout>
 
             <LinearLayout
@@ -205,7 +205,7 @@
                     android:id="@+id/personaResistsShow"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="attack" />
+                    android:text="@string/GenInfoRes" />
             </LinearLayout>
 
             <LinearLayout
@@ -224,7 +224,7 @@
                     android:id="@+id/personaBlockShow"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="attack" />
+                    android:text="@string/GenInfoBlo" />
             </LinearLayout>
 
             <LinearLayout
@@ -243,7 +243,7 @@
                     android:id="@+id/personaAbsorbsShow"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="attack" />
+                    android:text="@string/GenInfoAbs" />
             </LinearLayout>
 
             <LinearLayout
@@ -262,7 +262,7 @@
                     android:id="@+id/personaReflectsShow"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="attack" />
+                    android:text="@string/GenInfoRef" />
             </LinearLayout>
 
             <LinearLayout
@@ -281,7 +281,7 @@
                     android:id="@+id/personaWeakShow"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="attack" />
+                    android:text="@string/GenInfoWe" />
             </LinearLayout>
         </TableRow>
 
@@ -309,43 +309,43 @@
                     android:id="@+id/skill1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="TextView" />
+                    android:text="@string/Skills1" />
 
                 <TextView
                     android:id="@+id/skill2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="TextView" />
+                    android:text="@string/Skills2" />
 
                 <TextView
                     android:id="@+id/skill3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="TextView" />
+                    android:text="@string/Skills3" />
 
                 <TextView
                     android:id="@+id/skill4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="TextView" />
+                    android:text="@string/Skills4" />
 
                 <TextView
                     android:id="@+id/skill5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="TextView" />
+                    android:text="@string/Skills5" />
 
                 <TextView
                     android:id="@+id/skill6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="TextView" />
+                    android:text="@string/Skills6" />
 
                 <TextView
                     android:id="@+id/skill7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="TextView" />
+                    android:text="@string/Skills7" />
             </LinearLayout>
 
             <LinearLayout
@@ -364,43 +364,43 @@
                     android:id="@+id/cost1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="TextView" />
+                    android:text="@string/Costs1" />
 
                 <TextView
                     android:id="@+id/cost2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="TextView" />
+                    android:text="@string/Costs2" />
 
                 <TextView
                     android:id="@+id/cost3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="TextView" />
+                    android:text="@string/Costs3" />
 
                 <TextView
                     android:id="@+id/cost4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="TextView" />
+                    android:text="@string/Costs4" />
 
                 <TextView
                     android:id="@+id/cost5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="TextView" />
+                    android:text="@string/Costs5" />
 
                 <TextView
                     android:id="@+id/cost6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="TextView" />
+                    android:text="@string/Costs6" />
 
                 <TextView
                     android:id="@+id/cost7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="TextView" />
+                    android:text="@string/Costs7" />
             </LinearLayout>
 
             <LinearLayout
@@ -420,43 +420,43 @@
                     android:id="@+id/effect1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="TextView" />
+                    android:text="@string/Effects1" />
 
                 <TextView
                     android:id="@+id/effect2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="TextView" />
+                    android:text="@string/Effects2" />
 
                 <TextView
                     android:id="@+id/effect3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="TextView" />
+                    android:text="@string/Effects3" />
 
                 <TextView
                     android:id="@+id/effect4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="TextView" />
+                    android:text="@string/Effects4" />
 
                 <TextView
                     android:id="@+id/effect5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="TextView" />
+                    android:text="@string/Effects5" />
 
                 <TextView
                     android:id="@+id/effect6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="TextView" />
+                    android:text="@string/Effects6" />
 
                 <TextView
                     android:id="@+id/effect7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="TextView" />
+                    android:text="@string/Effects7" />
             </LinearLayout>
 
             <LinearLayout
@@ -476,43 +476,43 @@
                     android:id="@+id/skillLevel1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="TextView" />
+                    android:text="@string/Levels1" />
 
                 <TextView
                     android:id="@+id/skillLevel2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="TextView" />
+                    android:text="@string/Levels2" />
 
                 <TextView
                     android:id="@+id/skillLevel3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="TextView" />
+                    android:text="@string/Levels3" />
 
                 <TextView
                     android:id="@+id/skillLevel4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="TextView" />
+                    android:text="@string/Levels4" />
 
                 <TextView
                     android:id="@+id/skillLevel5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="TextView" />
+                    android:text="@string/Levels5" />
 
                 <TextView
                     android:id="@+id/skillLevel6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="TextView" />
+                    android:text="@string/Levels6" />
 
                 <TextView
                     android:id="@+id/skillLevel7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="TextView" />
+                    android:text="@string/Levels7" />
             </LinearLayout>
 
         </TableRow>
@@ -542,7 +542,7 @@
                 android:id="@+id/fusionSpellShow"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="@string/FusionSpellName" />
         </LinearLayout>
 
         <LinearLayout
@@ -561,7 +561,7 @@
                 android:id="@+id/fusionSpellCostShow"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="@string/FusionSpellCost" />
         </LinearLayout>
 
         <LinearLayout
@@ -580,7 +580,7 @@
                 android:id="@+id/fusionSpellEffectShow"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="@string/FusionSpellEffect" />
         </LinearLayout>
 
         <LinearLayout
@@ -599,7 +599,7 @@
                 android:id="@+id/fusionSpellPersonasShow"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="@string/FusionSpellPersonaNames" />
         </LinearLayout>
     </TableRow>
 
