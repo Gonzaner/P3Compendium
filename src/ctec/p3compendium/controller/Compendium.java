@@ -31,8 +31,8 @@ public class Compendium extends Activity
 
 		/**
 		 * The string that is show on the list of the start screen. Choice from
-		 * here will lead you to the Arcanas screen hopefully passed
-		 * correctly  to display needed personas.
+		 * here will lead you to the Arcanas screen hopefully passed with the
+		 * correct intent to display needed personas.
 		 * 
 		 */
 
