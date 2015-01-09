@@ -15,8 +15,21 @@ public class Persona3State extends Application
 	private String[] foolArcana ,magicianArcana,priestessArcana,empressArcana,emperorArcana,heirophantArcana,loversArcana,chariotArcana,justiceArcana, 
 					hermitArcana,fortuneArcana,strengthArcana,hangedmanArcana,deathArcana,tempranceArcana,devilArcana,towerArcana,starArcana,        
 					moonArcana,sunArcana,judgmentArcana,aeonArcana; 
-		
-
+	private String [] [] Personas;
+	private String [] Orpheus,Slime,Legion,Ose, BlackFrost,Decarabia,Loki,Susanoo,OrpheusTelos,Nekomat,JackFrost,PyroJack,
+					  HuaPo,Sati,Orobas,Rangda,Surt,Apsaras,Unicorn,HighPixie,Sarasvati,Ganga,Parvati,Kikurihime,Scathach,LeananSidhe,
+					  Yaksini,Laksmi,Hariti,Gabriel,MotherHarlot,Skadi,Alilat,Forneus,Oberon,TakeMikazuchi,KingFrost,RajaNaga,Kingu,
+					  Barong,Odin,Omoikane,Berith,Shiisaa,Flauros,Thoth,HokutoSeikun,Daisoujou,Kohryu,Pixie,Alp,Narcissus,QueenMab,
+					  SakiMitama,Titania,Raphael,Cybele,AraMitama,Chimera,Zouchouten,Ares,Oumitsunu,NataTaishi,Koumokuten,Thor,Angel,
+					  Archangel,Principlaity,Power,Virtue,Dominion,Throne,Melchizedek,YomotsuShikome,Naga,Lamia,Mothman,Taraka,KuramaTengu,
+					  Nebrios,Kumbhanda,Arahabaki,Fortuna,Empus,KusiMitama,Clotho,Lachesis,Atropos,Norn,Cerberus,Valkyrie,Rakshasa,Titan,
+					  Jikoukuten,Hanuman,Narashima,Kali,Siegfried,Inugami,TakaMinakata,Orthrus,Vasuki,Ubelluris,Hecatoncheires,HellBiker,
+					  Attis,Ghoul,PaleRider,Loa,Samael,Mot,Alice,Thanatos,NigiMitama,Mithra,Genbu,Seiryuu,Okuninushi,Suzaku,Byakko,
+					  Yurlungur,Lilim,Vetala,Incubus,Succubus,Pazuzu,Lilith,Abaddon,Beelzebub,Eligor,ChuChulainn,Bishamonten,SeitenTaisei,
+					  Masakado,Mara,Shiva,ChiYou,Nandi,Kaiwan,Ganesha,Garuda,Kartikeya,Saturnus,Helel,Gurr,YamatanoOrochi,Girimehkala,
+					  Dionysus,Chernobog,Seth,BaalZebul,Sandalphon,Yatagarasu,Quetzalcoatl,Jatayu,Horus,Sparna,Vishnu,Asura,Anubis,
+					  Trumpeter,Michael,Satan,Lucifer,Messiah,Uriel,Nidhogg,Ananta,Atavaka,Metatron;
+	
 	private int selectedIndex;
 	
 	
@@ -275,248 +288,7 @@ public class Persona3State extends Application
 				
 				
 	
-		charType = ("type");
 		
-		charName = new String[]
-				
-				{
-					/**
-					 * Fool
-					 */
-					"Orpheus",
-					"Slime",
-					"Legion",
-					"Ose",
-					"Black Frost",
-					"Decarabia",
-					"Loki",
-					"Susano-o",
-					"Orpheus Telos",
-					/**
-					 * Magician
-					 */
-					"Nekomata",
-					"Jack Frost",
-					"Pyro Jack",
-					"Hua Po",
-					"Sati",
-					"Orobas",
-					"Rangda",
-					"Surt",
-					/**
-					 * Priestess
-					 */
-					"Apsaras",
-					"Unicorn",
-					"High Pixie",
-					"Sarasvati",
-					"Ganga",
-					"Parvati",
-					"Kikuri-hime",
-					"Scathach",
-					/**
-					 * Empress
-					 */
-					"Leanan Sidhe",
-					"Yaksini",
-					"Laksmi",
-					"Hariti",
-					"Gabriel",
-					"Mother Harlot",
-					"Skadi",
-					"Alilat",
-					/**
-					 * Emperor
-					 */
-					"Forneus",
-					"Oberon",
-					"Take-Mikazuchi",
-					"King Frost",
-					"Raja Naga",
-					"Kingu",
-					"Barong",
-					"Odin",
-					/**
-					 * Heirophant
-					 */
-					"Omoikane",
-					"Berith",
-					"Shiisaa",
-					"Flauros",
-					"Thoth",
-					"Hokuto Seikun",
-					"Daisoujou",
-					"Kohryu",
-					/**
-					 * Lovers
-					 */
-					"Pixie",
-					"Alp",
-					"Narcissus",
-					"Queen Mab",
-					"Saki Mitama",
-					"Titania",
-					"Raphael",
-					"Cybele",
-					/**
-					 * Chariot
-					 */
-					"Ara Mitama",
-					"Chimera",
-					"Zouchouten",
-					"Ares",
-					"Oumitsunu",
-					"Nata Taishi",
-					"Koumokuten",
-					"Thor",
-					/**
-					 * Justice
-					 */
-					"Angel",
-					"Archangel",
-					"Principlaity",
-					"Power",
-					"Virtue",
-					"Dominion",
-					"Throne",
-					"Melchizedek",
-					/**
-					 * Hermit
-					 */
-					"Yomotsu-Shikome",
-					"Naga",
-					"Lamia",
-					"Mothman",
-					"Taraka",
-					"Kurama Tengu",
-					"Nebrios",
-					"Kumbhanda",
-					"Arahabaki",
-					/**
-					 * Fortune
-					 */
-					"Fortuna",
-					"Empus",
-					"Kusi Mitama",
-					"Clotho",
-					"Lachesis",
-					"Atropos",
-					"Norn",
-					/**
-					 * Strength
-					 */
-					"Cerberus",
-					"Valkyrie",
-					"Rakshasa",
-					"Titan",
-					"Jikoukuten",
-					"Hanuman",
-					"Narashima",
-					"Kali",
-					"Siegfried",
-					/**
-					 * Hanged Man
-					 */
-					"Inugami",
-					"Taka-Minakata",
-					"Orthrus",
-					"Vasuki",
-					"Ubelluris",
-					"Hecatoncheires",
-					"Hell Biker",
-					"Attis",
-					/**
-					 * Death
-					 */
-					"Ghoul",
-					"Pale Rider",
-					"Loa",
-					"Samael",
-					"Mot",
-					"Alice",
-					"Thanatos",
-					/**
-					 * Temperance
-					 */
-					"Nigi Mitama",
-					"Mithra",
-					"Genbu",
-					"Seiryuu",
-					"Okuninushi",
-					"Suzaku",
-					"Byakko",
-					"Yurlungur",
-					/**
-					 * Devil
-					 */
-					"Lilim",
-					"Vetala",
-					"Incubus",
-					"Succubus",
-					"Pazuzu",
-					"Lilith",
-					"Abaddon",
-					"Beelzebub",
-					/**
-					 * Tower
-					 */
-					"Eligor",
-					"Chu Chulainn",
-					"Bishamonten",
-					"Seiten Taisei",
-					"Masakado",
-					"Mara",
-					"Shiva",
-					"Chi You",
-					/**
-					 * Star
-					 */
-					"Nandi",
-					"Kaiwan",
-					"Ganesha",
-					"Garuda",
-					"Kartikeya",
-					"Saturnus",
-					"Helel",
-					/**
-					 * Moon
-					 */
-					"Gurr",
-					"Yamata-no-Orochi",
-					"Girimehkala",
-					"Dionysus",
-					"Chernobog",
-					"Seth",
-					"Baal Zebul",
-					"Sandalphon",
-					/**
-					 * Sun
-					 */
-					"Yatagarasu",
-					"Quetzalcoatl",
-					"Jatayu",
-					"Horus",
-					"Sparna",
-					"Vishnu",
-					"Asura",
-					/**
-					 * Judgment
-					 */
-					"Anubis",
-					"Trumpeter",
-					"Michael",
-					"Satan",
-					"Lucifer",
-					"Messiah",
-					/**
-					 * Aeon
-					 */
-					"Uriel",
-					"Nidhogg",
-					"Ananta",
-					"Atavaka",
-					"Metatron",
-				};
 		/**
 		 *  The numerical values of Level, Strength, Magic, Endurance, Agility, Luck.
 		 */
@@ -769,6 +541,22 @@ public class Persona3State extends Application
 					hermitArcana,fortuneArcana,strengthArcana,hangedmanArcana,deathArcana,tempranceArcana,devilArcana,towerArcana,starArcana,        
 					moonArcana,sunArcana,judgmentArcana,aeonArcana
 				};
+		Personas = new String[][]
+				{
+				  Orpheus,Slime,Legion,Ose, BlackFrost,Decarabia,Loki,Susanoo,OrpheusTelos,Nekomat,JackFrost,PyroJack,
+				  HuaPo,Sati,Orobas,Rangda,Surt,Apsaras,Unicorn,HighPixie,Sarasvati,Ganga,Parvati,Kikurihime,Scathach,LeananSidhe,
+				  Yaksini,Laksmi,Hariti,Gabriel,MotherHarlot,Skadi,Alilat,Forneus,Oberon,TakeMikazuchi,KingFrost,RajaNaga,Kingu,
+				  Barong,Odin,Omoikane,Berith,Shiisaa,Flauros,Thoth,HokutoSeikun,Daisoujou,Kohryu,Pixie,Alp,Narcissus,QueenMab,
+				  SakiMitama,Titania,Raphael,Cybele,AraMitama,Chimera,Zouchouten,Ares,Oumitsunu,NataTaishi,Koumokuten,Thor,Angel,
+				  Archangel,Principlaity,Power,Virtue,Dominion,Throne,Melchizedek,YomotsuShikome,Naga,Lamia,Mothman,Taraka,KuramaTengu,
+				  Nebrios,Kumbhanda,Arahabaki,Fortuna,Empus,KusiMitama,Clotho,Lachesis,Atropos,Norn,Cerberus,Valkyrie,Rakshasa,Titan,
+				  Jikoukuten,Hanuman,Narashima,Kali,Siegfried,Inugami,TakaMinakata,Orthrus,Vasuki,Ubelluris,Hecatoncheires,HellBiker,
+				  Attis,Ghoul,PaleRider,Loa,Samael,Mot,Alice,Thanatos,NigiMitama,Mithra,Genbu,Seiryuu,Okuninushi,Suzaku,Byakko,
+				  Yurlungur,Lilim,Vetala,Incubus,Succubus,Pazuzu,Lilith,Abaddon,Beelzebub,Eligor,ChuChulainn,Bishamonten,SeitenTaisei,
+				  Masakado,Mara,Shiva,ChiYou,Nandi,Kaiwan,Ganesha,Garuda,Kartikeya,Saturnus,Helel,Gurr,YamatanoOrochi,Girimehkala,
+				  Dionysus,Chernobog,Seth,BaalZebul,Sandalphon,Yatagarasu,Quetzalcoatl,Jatayu,Horus,Sparna,Vishnu,Asura,Anubis,
+				  Trumpeter,Michael,Satan,Lucifer,Messiah,Uriel,Nidhogg,Ananta,Atavaka,Metatron
+				};
 		
 	}
 
@@ -776,6 +564,13 @@ public class Persona3State extends Application
 	{
 		return arcanas;
 	}
+	
+	public String[][] getPersonas()
+	{
+		
+		return Personas;
+	}
+	
 	public int[][] getStats()
 	{
 		return stats;
@@ -931,6 +726,855 @@ public class Persona3State extends Application
 		return selectedIndex;
 	}
 
+	public String[] getOrpheus()
+	{
+		return Orpheus;
+	}
+
+	public String[] getSlime()
+	{
+		return Slime;
+	}
+
+	public String[] getLegion()
+	{
+		return Legion;
+	}
+
+	public String[] getOse()
+	{
+		return Ose;
+	}
+
+	public String[] getBlackFrost()
+	{
+		return BlackFrost;
+	}
+
+	public String[] getDecarabia()
+	{
+		return Decarabia;
+	}
+
+	public String[] getLoki()
+	{
+		return Loki;
+	}
+
+	public String[] getSusanoo()
+	{
+		return Susanoo;
+	}
+
+	public String[] getOrpheusTelos()
+	{
+		return OrpheusTelos;
+	}
+
+	public String[] getNekomat()
+	{
+		return Nekomat;
+	}
+
+	public String[] getJackFrost()
+	{
+		return JackFrost;
+	}
+
+	public String[] getPyroJack()
+	{
+		return PyroJack;
+	}
+
+	public String[] getHuaPo()
+	{
+		return HuaPo;
+	}
+
+	public String[] getSati()
+	{
+		return Sati;
+	}
+
+	public String[] getOrobas()
+	{
+		return Orobas;
+	}
+
+	public String[] getRangda()
+	{
+		return Rangda;
+	}
+
+	public String[] getSurt()
+	{
+		return Surt;
+	}
+
+	public String[] getApsaras()
+	{
+		return Apsaras;
+	}
+
+	public String[] getUnicorn()
+	{
+		return Unicorn;
+	}
+
+	public String[] getHighPixie()
+	{
+		return HighPixie;
+	}
+
+	public String[] getSarasvati()
+	{
+		return Sarasvati;
+	}
+
+	public String[] getGanga()
+	{
+		return Ganga;
+	}
+
+	public String[] getParvati()
+	{
+		return Parvati;
+	}
+
+	public String[] getKikurihime()
+	{
+		return Kikurihime;
+	}
+
+	public String[] getScathach()
+	{
+		return Scathach;
+	}
+
+	public String[] getLeananSidhe()
+	{
+		return LeananSidhe;
+	}
+
+	public String[] getYaksini()
+	{
+		return Yaksini;
+	}
+
+	public String[] getLaksmi()
+	{
+		return Laksmi;
+	}
+
+	public String[] getHariti()
+	{
+		return Hariti;
+	}
+
+	public String[] getGabriel()
+	{
+		return Gabriel;
+	}
+
+	public String[] getMotherHarlot()
+	{
+		return MotherHarlot;
+	}
+
+	public String[] getSkadi()
+	{
+		return Skadi;
+	}
+
+	public String[] getAlilat()
+	{
+		return Alilat;
+	}
+
+	public String[] getForneus()
+	{
+		return Forneus;
+	}
+
+	public String[] getOberon()
+	{
+		return Oberon;
+	}
+
+	public String[] getTakeMikazuchi()
+	{
+		return TakeMikazuchi;
+	}
+
+	public String[] getKingFrost()
+	{
+		return KingFrost;
+	}
+
+	public String[] getRajaNaga()
+	{
+		return RajaNaga;
+	}
+
+	public String[] getKingu()
+	{
+		return Kingu;
+	}
+
+	public String[] getBarong()
+	{
+		return Barong;
+	}
+
+	public String[] getOdin()
+	{
+		return Odin;
+	}
+
+	public String[] getOmoikane()
+	{
+		return Omoikane;
+	}
+
+	public String[] getBerith()
+	{
+		return Berith;
+	}
+
+	public String[] getShiisaa()
+	{
+		return Shiisaa;
+	}
+
+	public String[] getFlauros()
+	{
+		return Flauros;
+	}
+
+	public String[] getThoth()
+	{
+		return Thoth;
+	}
+
+	public String[] getHokutoSeikun()
+	{
+		return HokutoSeikun;
+	}
+
+	public String[] getDaisoujou()
+	{
+		return Daisoujou;
+	}
+
+	public String[] getKohryu()
+	{
+		return Kohryu;
+	}
+
+	public String[] getPixie()
+	{
+		return Pixie;
+	}
+
+	public String[] getAlp()
+	{
+		return Alp;
+	}
+
+	public String[] getNarcissus()
+	{
+		return Narcissus;
+	}
+
+	public String[] getQueenMab()
+	{
+		return QueenMab;
+	}
+
+	public String[] getSakiMitama()
+	{
+		return SakiMitama;
+	}
+
+	public String[] getTitania()
+	{
+		return Titania;
+	}
+
+	public String[] getRaphael()
+	{
+		return Raphael;
+	}
+
+	public String[] getCybele()
+	{
+		return Cybele;
+	}
+
+	public String[] getAraMitama()
+	{
+		return AraMitama;
+	}
+
+	public String[] getChimera()
+	{
+		return Chimera;
+	}
+
+	public String[] getZouchouten()
+	{
+		return Zouchouten;
+	}
+
+	public String[] getAres()
+	{
+		return Ares;
+	}
+
+	public String[] getOumitsunu()
+	{
+		return Oumitsunu;
+	}
+
+	public String[] getNataTaishi()
+	{
+		return NataTaishi;
+	}
+
+	public String[] getKoumokuten()
+	{
+		return Koumokuten;
+	}
+
+	public String[] getThor()
+	{
+		return Thor;
+	}
+
+	public String[] getAngel()
+	{
+		return Angel;
+	}
+
+	public String[] getArchangel()
+	{
+		return Archangel;
+	}
+
+	public String[] getPrinciplaity()
+	{
+		return Principlaity;
+	}
+
+	public String[] getPower()
+	{
+		return Power;
+	}
+
+	public String[] getVirtue()
+	{
+		return Virtue;
+	}
+
+	public String[] getDominion()
+	{
+		return Dominion;
+	}
+
+	public String[] getThrone()
+	{
+		return Throne;
+	}
+
+	public String[] getMelchizedek()
+	{
+		return Melchizedek;
+	}
+
+	public String[] getYomotsuShikome()
+	{
+		return YomotsuShikome;
+	}
+
+	public String[] getNaga()
+	{
+		return Naga;
+	}
+
+	public String[] getLamia()
+	{
+		return Lamia;
+	}
+
+	public String[] getMothman()
+	{
+		return Mothman;
+	}
+
+	public String[] getTaraka()
+	{
+		return Taraka;
+	}
+
+	public String[] getKuramaTengu()
+	{
+		return KuramaTengu;
+	}
+
+	public String[] getNebrios()
+	{
+		return Nebrios;
+	}
+
+	public String[] getKumbhanda()
+	{
+		return Kumbhanda;
+	}
+
+	public String[] getArahabaki()
+	{
+		return Arahabaki;
+	}
+
+	public String[] getFortuna()
+	{
+		return Fortuna;
+	}
+
+	public String[] getEmpus()
+	{
+		return Empus;
+	}
+
+	public String[] getKusiMitama()
+	{
+		return KusiMitama;
+	}
+
+	public String[] getClotho()
+	{
+		return Clotho;
+	}
+
+	public String[] getLachesis()
+	{
+		return Lachesis;
+	}
+
+	public String[] getAtropos()
+	{
+		return Atropos;
+	}
+
+	public String[] getNorn()
+	{
+		return Norn;
+	}
+
+	public String[] getCerberus()
+	{
+		return Cerberus;
+	}
+
+	public String[] getValkyrie()
+	{
+		return Valkyrie;
+	}
+
+	public String[] getRakshasa()
+	{
+		return Rakshasa;
+	}
+
+	public String[] getTitan()
+	{
+		return Titan;
+	}
+
+	public String[] getJikoukuten()
+	{
+		return Jikoukuten;
+	}
+
+	public String[] getHanuman()
+	{
+		return Hanuman;
+	}
+
+	public String[] getNarashima()
+	{
+		return Narashima;
+	}
+
+	public String[] getKali()
+	{
+		return Kali;
+	}
+
+	public String[] getSiegfried()
+	{
+		return Siegfried;
+	}
+
+	public String[] getInugami()
+	{
+		return Inugami;
+	}
+
+	public String[] getTakaMinakata()
+	{
+		return TakaMinakata;
+	}
+
+	public String[] getOrthrus()
+	{
+		return Orthrus;
+	}
+
+	public String[] getVasuki()
+	{
+		return Vasuki;
+	}
+
+	public String[] getUbelluris()
+	{
+		return Ubelluris;
+	}
+
+	public String[] getHecatoncheires()
+	{
+		return Hecatoncheires;
+	}
+
+	public String[] getHellBiker()
+	{
+		return HellBiker;
+	}
+
+	public String[] getAttis()
+	{
+		return Attis;
+	}
+
+	public String[] getGhoul()
+	{
+		return Ghoul;
+	}
+
+	public String[] getPaleRider()
+	{
+		return PaleRider;
+	}
+
+	public String[] getLoa()
+	{
+		return Loa;
+	}
+
+	public String[] getSamael()
+	{
+		return Samael;
+	}
+
+	public String[] getMot()
+	{
+		return Mot;
+	}
+
+	public String[] getAlice()
+	{
+		return Alice;
+	}
+
+	public String[] getThanatos()
+	{
+		return Thanatos;
+	}
+
+	public String[] getNigiMitama()
+	{
+		return NigiMitama;
+	}
+
+	public String[] getMithra()
+	{
+		return Mithra;
+	}
+
+	public String[] getGenbu()
+	{
+		return Genbu;
+	}
+
+	public String[] getSeiryuu()
+	{
+		return Seiryuu;
+	}
+
+	public String[] getOkuninushi()
+	{
+		return Okuninushi;
+	}
+
+	public String[] getSuzaku()
+	{
+		return Suzaku;
+	}
+
+	public String[] getByakko()
+	{
+		return Byakko;
+	}
+
+	public String[] getYurlungur()
+	{
+		return Yurlungur;
+	}
+
+	public String[] getLilim()
+	{
+		return Lilim;
+	}
+
+	public String[] getVetala()
+	{
+		return Vetala;
+	}
+
+	public String[] getIncubus()
+	{
+		return Incubus;
+	}
+
+	public String[] getSuccubus()
+	{
+		return Succubus;
+	}
+
+	public String[] getPazuzu()
+	{
+		return Pazuzu;
+	}
+
+	public String[] getLilith()
+	{
+		return Lilith;
+	}
+
+	public String[] getAbaddon()
+	{
+		return Abaddon;
+	}
+
+	public String[] getBeelzebub()
+	{
+		return Beelzebub;
+	}
+
+	public String[] getEligor()
+	{
+		return Eligor;
+	}
+
+	public String[] getChuChulainn()
+	{
+		return ChuChulainn;
+	}
+
+	public String[] getBishamonten()
+	{
+		return Bishamonten;
+	}
+
+	public String[] getSeitenTaisei()
+	{
+		return SeitenTaisei;
+	}
+
+	public String[] getMasakado()
+	{
+		return Masakado;
+	}
+
+	public String[] getMara()
+	{
+		return Mara;
+	}
+
+	public String[] getShiva()
+	{
+		return Shiva;
+	}
+
+	public String[] getChiYou()
+	{
+		return ChiYou;
+	}
+
+	public String[] getNandi()
+	{
+		return Nandi;
+	}
+
+	public String[] getKaiwan()
+	{
+		return Kaiwan;
+	}
+
+	public String[] getGanesha()
+	{
+		return Ganesha;
+	}
+
+	public String[] getGaruda()
+	{
+		return Garuda;
+	}
+
+	public String[] getKartikeya()
+	{
+		return Kartikeya;
+	}
+
+	public String[] getSaturnus()
+	{
+		return Saturnus;
+	}
+
+	public String[] getHelel()
+	{
+		return Helel;
+	}
+
+	public String[] getGurr()
+	{
+		return Gurr;
+	}
+
+	public String[] getYamatanoOrochi()
+	{
+		return YamatanoOrochi;
+	}
+
+	public String[] getGirimehkala()
+	{
+		return Girimehkala;
+	}
+
+	public String[] getDionysus()
+	{
+		return Dionysus;
+	}
+
+	public String[] getChernobog()
+	{
+		return Chernobog;
+	}
+
+	public String[] getSeth()
+	{
+		return Seth;
+	}
+
+	public String[] getBaalZebul()
+	{
+		return BaalZebul;
+	}
+
+	public String[] getSandalphon()
+	{
+		return Sandalphon;
+	}
+
+	public String[] getYatagarasu()
+	{
+		return Yatagarasu;
+	}
+
+	public String[] getQuetzalcoatl()
+	{
+		return Quetzalcoatl;
+	}
+
+	public String[] getJatayu()
+	{
+		return Jatayu;
+	}
+
+	public String[] getHorus()
+	{
+		return Horus;
+	}
+
+	public String[] getSparna()
+	{
+		return Sparna;
+	}
+
+	public String[] getVishnu()
+	{
+		return Vishnu;
+	}
+
+	public String[] getAsura()
+	{
+		return Asura;
+	}
+
+	public String[] getAnubis()
+	{
+		return Anubis;
+	}
+
+	public String[] getTrumpeter()
+	{
+		return Trumpeter;
+	}
+
+	public String[] getMichael()
+	{
+		return Michael;
+	}
+
+	public String[] getSatan()
+	{
+		return Satan;
+	}
+
+	public String[] getLucifer()
+	{
+		return Lucifer;
+	}
+
+	public String[] getMessiah()
+	{
+		return Messiah;
+	}
+
+	public String[] getUriel()
+	{
+		return Uriel;
+	}
+
+	public String[] getNidhogg()
+	{
+		return Nidhogg;
+	}
+
+	public String[] getAnanta()
+	{
+		return Ananta;
+	}
+
+	public String[] getAtavaka()
+	{
+		return Atavaka;
+	}
+
+	public String[] getMetatron()
+	{
+		return Metatron;
+	}
 
 	public void setStats(int[][] stats)
 	{
@@ -1088,7 +1732,859 @@ public class Persona3State extends Application
 	}
 
 
-	
-	
+	public void setPersonas(String[][] personas)
+	{
+		Personas = personas;
+	}
+
+	public void setOrpheus(String[] orpheus)
+	{
+		Orpheus = orpheus;
+	}
+
+	public void setSlime(String[] slime)
+	{
+		Slime = slime;
+	}
+
+	public void setLegion(String[] legion)
+	{
+		Legion = legion;
+	}
+
+	public void setOse(String[] ose)
+	{
+		Ose = ose;
+	}
+
+	public void setBlackFrost(String[] blackFrost)
+	{
+		BlackFrost = blackFrost;
+	}
+
+	public void setDecarabia(String[] decarabia)
+	{
+		Decarabia = decarabia;
+	}
+
+	public void setLoki(String[] loki)
+	{
+		Loki = loki;
+	}
+
+	public void setSusanoo(String[] susanoo)
+	{
+		Susanoo = susanoo;
+	}
+
+	public void setOrpheusTelos(String[] orpheusTelos)
+	{
+		OrpheusTelos = orpheusTelos;
+	}
+
+	public void setNekomat(String[] nekomat)
+	{
+		Nekomat = nekomat;
+	}
+
+	public void setJackFrost(String[] jackFrost)
+	{
+		JackFrost = jackFrost;
+	}
+
+	public void setPyroJack(String[] pyroJack)
+	{
+		PyroJack = pyroJack;
+	}
+
+	public void setHuaPo(String[] huaPo)
+	{
+		HuaPo = huaPo;
+	}
+
+	public void setSati(String[] sati)
+	{
+		Sati = sati;
+	}
+
+	public void setOrobas(String[] orobas)
+	{
+		Orobas = orobas;
+	}
+
+	public void setRangda(String[] rangda)
+	{
+		Rangda = rangda;
+	}
+
+	public void setSurt(String[] surt)
+	{
+		Surt = surt;
+	}
+
+	public void setApsaras(String[] apsaras)
+	{
+		Apsaras = apsaras;
+	}
+
+	public void setUnicorn(String[] unicorn)
+	{
+		Unicorn = unicorn;
+	}
+
+	public void setHighPixie(String[] highPixie)
+	{
+		HighPixie = highPixie;
+	}
+
+	public void setSarasvati(String[] sarasvati)
+	{
+		Sarasvati = sarasvati;
+	}
+
+	public void setGanga(String[] ganga)
+	{
+		Ganga = ganga;
+	}
+
+	public void setParvati(String[] parvati)
+	{
+		Parvati = parvati;
+	}
+
+	public void setKikurihime(String[] kikurihime)
+	{
+		Kikurihime = kikurihime;
+	}
+
+	public void setScathach(String[] scathach)
+	{
+		Scathach = scathach;
+	}
+
+	public void setLeananSidhe(String[] leananSidhe)
+	{
+		LeananSidhe = leananSidhe;
+	}
+
+	public void setYaksini(String[] yaksini)
+	{
+		Yaksini = yaksini;
+	}
+
+	public void setLaksmi(String[] laksmi)
+	{
+		Laksmi = laksmi;
+	}
+
+	public void setHariti(String[] hariti)
+	{
+		Hariti = hariti;
+	}
+
+	public void setGabriel(String[] gabriel)
+	{
+		Gabriel = gabriel;
+	}
+
+	public void setMotherHarlot(String[] motherHarlot)
+	{
+		MotherHarlot = motherHarlot;
+	}
+
+	public void setSkadi(String[] skadi)
+	{
+		Skadi = skadi;
+	}
+
+	public void setAlilat(String[] alilat)
+	{
+		Alilat = alilat;
+	}
+
+	public void setForneus(String[] forneus)
+	{
+		Forneus = forneus;
+	}
+
+	public void setOberon(String[] oberon)
+	{
+		Oberon = oberon;
+	}
+
+	public void setTakeMikazuchi(String[] takeMikazuchi)
+	{
+		TakeMikazuchi = takeMikazuchi;
+	}
+
+	public void setKingFrost(String[] kingFrost)
+	{
+		KingFrost = kingFrost;
+	}
+
+	public void setRajaNaga(String[] rajaNaga)
+	{
+		RajaNaga = rajaNaga;
+	}
+
+	public void setKingu(String[] kingu)
+	{
+		Kingu = kingu;
+	}
+
+	public void setBarong(String[] barong)
+	{
+		Barong = barong;
+	}
+
+	public void setOdin(String[] odin)
+	{
+		Odin = odin;
+	}
+
+	public void setOmoikane(String[] omoikane)
+	{
+		Omoikane = omoikane;
+	}
+
+	public void setBerith(String[] berith)
+	{
+		Berith = berith;
+	}
+
+	public void setShiisaa(String[] shiisaa)
+	{
+		Shiisaa = shiisaa;
+	}
+
+	public void setFlauros(String[] flauros)
+	{
+		Flauros = flauros;
+	}
+
+	public void setThoth(String[] thoth)
+	{
+		Thoth = thoth;
+	}
+
+	public void setHokutoSeikun(String[] hokutoSeikun)
+	{
+		HokutoSeikun = hokutoSeikun;
+	}
+
+	public void setDaisoujou(String[] daisoujou)
+	{
+		Daisoujou = daisoujou;
+	}
+
+	public void setKohryu(String[] kohryu)
+	{
+		Kohryu = kohryu;
+	}
+
+	public void setPixie(String[] pixie)
+	{
+		Pixie = pixie;
+	}
+
+	public void setAlp(String[] alp)
+	{
+		Alp = alp;
+	}
+
+	public void setNarcissus(String[] narcissus)
+	{
+		Narcissus = narcissus;
+	}
+
+	public void setQueenMab(String[] queenMab)
+	{
+		QueenMab = queenMab;
+	}
+
+	public void setSakiMitama(String[] sakiMitama)
+	{
+		SakiMitama = sakiMitama;
+	}
+
+	public void setTitania(String[] titania)
+	{
+		Titania = titania;
+	}
+
+	public void setRaphael(String[] raphael)
+	{
+		Raphael = raphael;
+	}
+
+	public void setCybele(String[] cybele)
+	{
+		Cybele = cybele;
+	}
+
+	public void setAraMitama(String[] araMitama)
+	{
+		AraMitama = araMitama;
+	}
+
+	public void setChimera(String[] chimera)
+	{
+		Chimera = chimera;
+	}
+
+	public void setZouchouten(String[] zouchouten)
+	{
+		Zouchouten = zouchouten;
+	}
+
+	public void setAres(String[] ares)
+	{
+		Ares = ares;
+	}
+
+	public void setOumitsunu(String[] oumitsunu)
+	{
+		Oumitsunu = oumitsunu;
+	}
+
+	public void setNataTaishi(String[] nataTaishi)
+	{
+		NataTaishi = nataTaishi;
+	}
+
+	public void setKoumokuten(String[] koumokuten)
+	{
+		Koumokuten = koumokuten;
+	}
+
+	public void setThor(String[] thor)
+	{
+		Thor = thor;
+	}
+
+	public void setAngel(String[] angel)
+	{
+		Angel = angel;
+	}
+
+	public void setArchangel(String[] archangel)
+	{
+		Archangel = archangel;
+	}
+
+	public void setPrinciplaity(String[] principlaity)
+	{
+		Principlaity = principlaity;
+	}
+
+	public void setPower(String[] power)
+	{
+		Power = power;
+	}
+
+	public void setVirtue(String[] virtue)
+	{
+		Virtue = virtue;
+	}
+
+	public void setDominion(String[] dominion)
+	{
+		Dominion = dominion;
+	}
+
+	public void setThrone(String[] throne)
+	{
+		Throne = throne;
+	}
+
+	public void setMelchizedek(String[] melchizedek)
+	{
+		Melchizedek = melchizedek;
+	}
+
+	public void setYomotsuShikome(String[] yomotsuShikome)
+	{
+		YomotsuShikome = yomotsuShikome;
+	}
+
+	public void setNaga(String[] naga)
+	{
+		Naga = naga;
+	}
+
+	public void setLamia(String[] lamia)
+	{
+		Lamia = lamia;
+	}
+
+	public void setMothman(String[] mothman)
+	{
+		Mothman = mothman;
+	}
+
+	public void setTaraka(String[] taraka)
+	{
+		Taraka = taraka;
+	}
+
+	public void setKuramaTengu(String[] kuramaTengu)
+	{
+		KuramaTengu = kuramaTengu;
+	}
+
+	public void setNebrios(String[] nebrios)
+	{
+		Nebrios = nebrios;
+	}
+
+	public void setKumbhanda(String[] kumbhanda)
+	{
+		Kumbhanda = kumbhanda;
+	}
+
+	public void setArahabaki(String[] arahabaki)
+	{
+		Arahabaki = arahabaki;
+	}
+
+	public void setFortuna(String[] fortuna)
+	{
+		Fortuna = fortuna;
+	}
+
+	public void setEmpus(String[] empus)
+	{
+		Empus = empus;
+	}
+
+	public void setKusiMitama(String[] kusiMitama)
+	{
+		KusiMitama = kusiMitama;
+	}
+
+	public void setClotho(String[] clotho)
+	{
+		Clotho = clotho;
+	}
+
+	public void setLachesis(String[] lachesis)
+	{
+		Lachesis = lachesis;
+	}
+
+	public void setAtropos(String[] atropos)
+	{
+		Atropos = atropos;
+	}
+
+	public void setNorn(String[] norn)
+	{
+		Norn = norn;
+	}
+
+	public void setCerberus(String[] cerberus)
+	{
+		Cerberus = cerberus;
+	}
+
+	public void setValkyrie(String[] valkyrie)
+	{
+		Valkyrie = valkyrie;
+	}
+
+	public void setRakshasa(String[] rakshasa)
+	{
+		Rakshasa = rakshasa;
+	}
+
+	public void setTitan(String[] titan)
+	{
+		Titan = titan;
+	}
+
+	public void setJikoukuten(String[] jikoukuten)
+	{
+		Jikoukuten = jikoukuten;
+	}
+
+	public void setHanuman(String[] hanuman)
+	{
+		Hanuman = hanuman;
+	}
+
+	public void setNarashima(String[] narashima)
+	{
+		Narashima = narashima;
+	}
+
+	public void setKali(String[] kali)
+	{
+		Kali = kali;
+	}
+
+	public void setSiegfried(String[] siegfried)
+	{
+		Siegfried = siegfried;
+	}
+
+	public void setInugami(String[] inugami)
+	{
+		Inugami = inugami;
+	}
+
+	public void setTakaMinakata(String[] takaMinakata)
+	{
+		TakaMinakata = takaMinakata;
+	}
+
+	public void setOrthrus(String[] orthrus)
+	{
+		Orthrus = orthrus;
+	}
+
+	public void setVasuki(String[] vasuki)
+	{
+		Vasuki = vasuki;
+	}
+
+	public void setUbelluris(String[] ubelluris)
+	{
+		Ubelluris = ubelluris;
+	}
+
+	public void setHecatoncheires(String[] hecatoncheires)
+	{
+		Hecatoncheires = hecatoncheires;
+	}
+
+	public void setHellBiker(String[] hellBiker)
+	{
+		HellBiker = hellBiker;
+	}
+
+	public void setAttis(String[] attis)
+	{
+		Attis = attis;
+	}
+
+	public void setGhoul(String[] ghoul)
+	{
+		Ghoul = ghoul;
+	}
+
+	public void setPaleRider(String[] paleRider)
+	{
+		PaleRider = paleRider;
+	}
+
+	public void setLoa(String[] loa)
+	{
+		Loa = loa;
+	}
+
+	public void setSamael(String[] samael)
+	{
+		Samael = samael;
+	}
+
+	public void setMot(String[] mot)
+	{
+		Mot = mot;
+	}
+
+	public void setAlice(String[] alice)
+	{
+		Alice = alice;
+	}
+
+	public void setThanatos(String[] thanatos)
+	{
+		Thanatos = thanatos;
+	}
+
+	public void setNigiMitama(String[] nigiMitama)
+	{
+		NigiMitama = nigiMitama;
+	}
+
+	public void setMithra(String[] mithra)
+	{
+		Mithra = mithra;
+	}
+
+	public void setGenbu(String[] genbu)
+	{
+		Genbu = genbu;
+	}
+
+	public void setSeiryuu(String[] seiryuu)
+	{
+		Seiryuu = seiryuu;
+	}
+
+	public void setOkuninushi(String[] okuninushi)
+	{
+		Okuninushi = okuninushi;
+	}
+
+	public void setSuzaku(String[] suzaku)
+	{
+		Suzaku = suzaku;
+	}
+
+	public void setByakko(String[] byakko)
+	{
+		Byakko = byakko;
+	}
+
+	public void setYurlungur(String[] yurlungur)
+	{
+		Yurlungur = yurlungur;
+	}
+
+	public void setLilim(String[] lilim)
+	{
+		Lilim = lilim;
+	}
+
+	public void setVetala(String[] vetala)
+	{
+		Vetala = vetala;
+	}
+
+	public void setIncubus(String[] incubus)
+	{
+		Incubus = incubus;
+	}
+
+	public void setSuccubus(String[] succubus)
+	{
+		Succubus = succubus;
+	}
+
+	public void setPazuzu(String[] pazuzu)
+	{
+		Pazuzu = pazuzu;
+	}
+
+	public void setLilith(String[] lilith)
+	{
+		Lilith = lilith;
+	}
+
+	public void setAbaddon(String[] abaddon)
+	{
+		Abaddon = abaddon;
+	}
+
+	public void setBeelzebub(String[] beelzebub)
+	{
+		Beelzebub = beelzebub;
+	}
+
+	public void setEligor(String[] eligor)
+	{
+		Eligor = eligor;
+	}
+
+	public void setChuChulainn(String[] chuChulainn)
+	{
+		ChuChulainn = chuChulainn;
+	}
+
+	public void setBishamonten(String[] bishamonten)
+	{
+		Bishamonten = bishamonten;
+	}
+
+	public void setSeitenTaisei(String[] seitenTaisei)
+	{
+		SeitenTaisei = seitenTaisei;
+	}
+
+	public void setMasakado(String[] masakado)
+	{
+		Masakado = masakado;
+	}
+
+	public void setMara(String[] mara)
+	{
+		Mara = mara;
+	}
+
+	public void setShiva(String[] shiva)
+	{
+		Shiva = shiva;
+	}
+
+	public void setChiYou(String[] chiYou)
+	{
+		ChiYou = chiYou;
+	}
+
+	public void setNandi(String[] nandi)
+	{
+		Nandi = nandi;
+	}
+
+	public void setKaiwan(String[] kaiwan)
+	{
+		Kaiwan = kaiwan;
+	}
+
+	public void setGanesha(String[] ganesha)
+	{
+		Ganesha = ganesha;
+	}
+
+	public void setGaruda(String[] garuda)
+	{
+		Garuda = garuda;
+	}
+
+	public void setKartikeya(String[] kartikeya)
+	{
+		Kartikeya = kartikeya;
+	}
+
+	public void setSaturnus(String[] saturnus)
+	{
+		Saturnus = saturnus;
+	}
+
+	public void setHelel(String[] helel)
+	{
+		Helel = helel;
+	}
+
+	public void setGurr(String[] gurr)
+	{
+		Gurr = gurr;
+	}
+
+	public void setYamatanoOrochi(String[] yamatanoOrochi)
+	{
+		YamatanoOrochi = yamatanoOrochi;
+	}
+
+	public void setGirimehkala(String[] girimehkala)
+	{
+		Girimehkala = girimehkala;
+	}
+
+	public void setDionysus(String[] dionysus)
+	{
+		Dionysus = dionysus;
+	}
+
+	public void setChernobog(String[] chernobog)
+	{
+		Chernobog = chernobog;
+	}
+
+	public void setSeth(String[] seth)
+	{
+		Seth = seth;
+	}
+
+	public void setBaalZebul(String[] baalZebul)
+	{
+		BaalZebul = baalZebul;
+	}
+
+	public void setSandalphon(String[] sandalphon)
+	{
+		Sandalphon = sandalphon;
+	}
+
+	public void setYatagarasu(String[] yatagarasu)
+	{
+		Yatagarasu = yatagarasu;
+	}
+
+	public void setQuetzalcoatl(String[] quetzalcoatl)
+	{
+		Quetzalcoatl = quetzalcoatl;
+	}
+
+	public void setJatayu(String[] jatayu)
+	{
+		Jatayu = jatayu;
+	}
+
+	public void setHorus(String[] horus)
+	{
+		Horus = horus;
+	}
+
+	public void setSparna(String[] sparna)
+	{
+		Sparna = sparna;
+	}
+
+	public void setVishnu(String[] vishnu)
+	{
+		Vishnu = vishnu;
+	}
+
+	public void setAsura(String[] asura)
+	{
+		Asura = asura;
+	}
+
+	public void setAnubis(String[] anubis)
+	{
+		Anubis = anubis;
+	}
+
+	public void setTrumpeter(String[] trumpeter)
+	{
+		Trumpeter = trumpeter;
+	}
+
+	public void setMichael(String[] michael)
+	{
+		Michael = michael;
+	}
+
+	public void setSatan(String[] satan)
+	{
+		Satan = satan;
+	}
+
+	public void setLucifer(String[] lucifer)
+	{
+		Lucifer = lucifer;
+	}
+
+	public void setMessiah(String[] messiah)
+	{
+		Messiah = messiah;
+	}
+
+	public void setUriel(String[] uriel)
+	{
+		Uriel = uriel;
+	}
+
+	public void setNidhogg(String[] nidhogg)
+	{
+		Nidhogg = nidhogg;
+	}
+
+	public void setAnanta(String[] ananta)
+	{
+		Ananta = ananta;
+	}
+
+	public void setAtavaka(String[] atavaka)
+	{
+		Atavaka = atavaka;
+	}
+
+	public void setMetatron(String[] metatron)
+	{
+		Metatron = metatron;
+	}
 		
 }

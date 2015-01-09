@@ -22,30 +22,35 @@ public class Arcanas extends Activity
 		
 		arcanaView = (ListView) findViewById(R.id.listView1);
 		setupList();
+		setupListeners();
 		returnButton =(Button) findViewById(R.id.returnButton);
 		
 
 	}
-	private void setupListeners()
-	{
-		returnButton.setOnClickListener (new View.OnClickListener()
-		{
-			
-			@Override
-			public void onClick(View v)
-			{
-				Intent returnIntent = new Intent(v.getContext(), Compendium.class);
-				startActivityForResult(returnIntent, 0);
-				
-				
-			}
-		});
-	}
+	
 	private void setupList()
 	{
 		String [] currentArcana = appState.getArcanas()[appState.getSelectedIndex()];	
 		
 		ArrayAdapter<String> arcanaAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, android.R.id.text1, currentArcana);
 		arcanaView.setAdapter(arcanaAdapter); 
+	}
+	private void setupListeners()
+	{
+		arcanaView.setOnItemClickListener(new AdapterView.OnItemClickListener()
+		{
+
+			@Override
+			public void onItemClick(AdapterView<?> parent, View view, int position, long id)
+			{
+
+				appState.setSelectedIndex(position);
+				Intent transferIntent = new Intent(view.getContext(), CharScreen.class);
+				startActivityForResult(transferIntent, 0);
+
+			}
+			
+			
+		});
 	}
 }

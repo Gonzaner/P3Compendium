@@ -3,7 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res/ctec.p3compendium.controller"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/Black"
     android:scrollbars="horizontal|vertical"
     tools:context="${relativePackage}.${activityClass}" >
 
@@ -48,27 +47,6 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@color/Blue"
-                android:orientation="vertical"
-                android:paddingRight="10dp" >
-
-                <TextView
-                    android:id="@+id/personaLevel"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Level" />
-
-                <TextView
-                    android:id="@+id/personaLevelShow"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/StatsLvl" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@color/Blue"
                 android:orientation="vertical"
                 android:paddingRight="0dp" >
 
@@ -107,7 +85,6 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@color/Blue"
                 android:orientation="vertical" >
 
                 <TextView
@@ -145,7 +122,6 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@color/Blue"
                 android:orientation="vertical"
                 android:paddingRight="0dp" >
 
@@ -173,7 +149,6 @@
             <LinearLayout
                 android:layout_width="10dp"
                 android:layout_height="wrap_content"
-                android:background="@color/Blue"
                 android:orientation="vertical" >
 
                 <TextView
@@ -211,7 +186,6 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@color/Blue"
                 android:orientation="vertical" >
 
                 <TextView
@@ -249,7 +223,6 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@color/Blue"
                 android:orientation="vertical" >
 
                 <TextView
@@ -289,7 +262,6 @@
             android:id="@+id/personaSkillTableRow"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/Blue"
             android:minHeight="75dp"
             android:minWidth="75dp" >
 
@@ -351,7 +323,6 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@color/Blue"
                 android:orientation="vertical" >
 
                 <TextView
@@ -462,7 +433,6 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@color/Blue"
                 android:orientation="vertical"
                 android:paddingLeft="50dp" >
 
@@ -529,7 +499,6 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/Blue"
             android:orientation="vertical" >
 
             <TextView
@@ -567,7 +536,6 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/Blue"
             android:orientation="vertical" >
 
             <TextView

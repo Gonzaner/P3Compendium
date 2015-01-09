@@ -37,8 +37,11 @@ public class Compendium extends Activity
 		 */
 
 		Trump = new String[]
-
-		{ "Fool", "Magician", "Priestess", "Empress", "Emperor", "Heirophant", "Lovers", "Chariot", "Justice", "Hermit", "Fortune", "Strength", "Hanged", "Death", "Temperance", "Devil", "Tower", "Star", "Moon", "Sun", "Judgment" };
+		{ 
+		"Fool", "Magician", "Priestess", "Empress", "Emperor", "Heirophant",   
+		"Lovers","Chariot","Justice", "Hermit", "Fortune", "Strength", "Hanged",  
+		"Death","Temperance","Devil","Tower", "Star", "Moon", "Sun", "Judgment" 
+		};
 
 		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, android.R.id.text1, Trump);
 		listView.setAdapter(adapter);
@@ -46,8 +49,8 @@ public class Compendium extends Activity
 	}
 
 	/**
-	 * The listener for the list, it is being coded to be able to pass the right
-	 * informaion.
+	 * The listener for the list,using the selected index.
+	 * 
 	 */
 
 	private void setupListeners()
