@@ -54,3 +54,5 @@ public class Arcanas extends Activity
 		});
 	}
 }
+
+		

@@ -9,7 +9,7 @@ import android.widget.*;
 
 /**
  * @author Nery Gonzalez
- * @version 1.2 11/21/14
+ * @version 1.4 1/13/15
  */
 public class Compendium extends Activity
 {
@@ -38,9 +38,27 @@ public class Compendium extends Activity
 
 		Trump = new String[]
 		{ 
-		"Fool", "Magician", "Priestess", "Empress", "Emperor", "Heirophant",   
-		"Lovers","Chariot","Justice", "Hermit", "Fortune", "Strength", "Hanged",  
-		"Death","Temperance","Devil","Tower", "Star", "Moon", "Sun", "Judgment" 
+		"Fool", 
+		"Magician", 
+		"Priestess", 
+		"Empress",
+		"Emperor", 
+		"Heirophant",   
+		"Lovers",
+		"Chariot",
+		"Justice", 
+		"Hermit", 
+		"Fortune", 
+		"Strength",
+		"Hanged",  
+		"Death",
+		"Temperance",
+		"Devil",
+		"Tower",
+		"Star", 
+		"Moon", 
+		"Sun", 
+		"Judgment" 
 		};
 
 		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, android.R.id.text1, Trump);
